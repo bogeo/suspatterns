@@ -1,2 +1,3 @@
 *.pat linguist-language=
 *.pat linguist-detectable=false
+*.pat text
