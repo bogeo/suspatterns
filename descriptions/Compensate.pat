@@ -6,7 +6,7 @@
 in susConcepts .
 in UmlConcepts .
 
-mod Compensate {
+module Compensate {
   
   -- Participants:
   [ uml$Executable sus$Energy sus$Carbon sus$Actor ]
