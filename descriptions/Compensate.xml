@@ -24,7 +24,7 @@
 		Software Patterns. Bochum: University of Applied Sciences. Submitted 
 		paper.
  	</literature>
-	<formalization language="CafeOBJ" location="Compensate.pat"/>
+	<formalization language="CafeOBJ" location="Compensate.cafe"/>
 	<related-patterns>
 		<pattern-link type="related-to" 
 			patternID="99" collection="candidates" label="increase awareness"/>

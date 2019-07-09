@@ -1,0 +1,57 @@
+-- ----------------------------------------------------------------------------
+-- Sustainable Software Design Pattern Candidates 
+-- CafeOBJ encoding
+-- Geovisualization Lab, Bochum University of Applied Sciences
+
+in susConcepts .
+in UmlConcepts .
+
+module Compensate {
+  
+  -- Participants:
+  [ uml$Executable sus$Energy sus$Carbon sus$Actor ]
+  -- Let S be a concrete software with energy demand E (CO2 as carbon 
+  -- equivalent):
+  op S : -> uml$Executable .
+  op E : -> sus$Energy . 
+  op CO2 : -> sus$Carbon .
+  op Us : -> sus$Actor .     
+  -- These two operations must be realized by the software:
+  op consume : uml$Executable -> sus$Energy .  -- record energy consumption
+  pred _dispose : sus$Carbon .  -- provide compensation
+
+  -- Collaborations:
+  pred _hasBeenRun : uml$Executable .
+  op 0 : -> sus$Energy .
+  eq consume(S) = if S hasBeenRun then E else 0 fi .
+  
+  op emission : sus$Energy -> sus$Carbon .  
+  pred _isGreen : sus$Energy .
+  op 0 : -> sus$Carbon .
+  eq emission(E) = if E isGreen then 0 else CO2 fi .
+  eq emission(0) = 0 .
+  
+  pred compensated : sus$Carbon sus$Actor .
+  pred _assertingCompensation : sus$Actor .  -- Who will be responsible?
+  var c : sus$Carbon .  var control : sus$Actor .
+  ceq compensated(c, control) = true 
+    if c dispose and control assertingCompensation .
+  eq compensated(0, control) = true .
+}
+
+open Compensate .
+  -- Postcondition:
+  let goal = compensated(emission(consume(S)), Us) .
+  red goal .
+  
+  -- Preconditions:
+  eq S hasBeenRun = true .  -- P1  
+  eq E isGreen = false .    -- P2
+  eq CO2 dispose = true .   -- P3
+  eq Us assertingCompensation = true .  -- P4   
+
+  -- Proof:
+  red goal .  -- must deliver 'true'  
+  -- Note: Goal will be achieved for 
+  -- (not [P1] or [P2]) or ([P3] and [P4]).
+close .
