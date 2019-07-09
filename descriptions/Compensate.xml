@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<pattern patternID="1" collection="candidates" xsi:noNamespaceSchemaLocation="../plml/plml_bo-2.0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<name>Compensate</name>
+	<alias>Regenerative operation</alias>
+	<problem>
+		Software operation consumes electric energy. Now the carbon dioxide emission that is induced by the operation of the software shall be reduced.
+	</problem>
+	<solution>
+		Reduce the share of consumed fossil energy by suitable compensation measures and assert these measures indeed will be implemented.
+	</solution>
+	<diagram location="Compensate.jpg"/>
+	<literature>
+	 	Schmidt, B. (2019): Towards a Formal Language to Describe Sustainable Software Patterns. Bochum: University of Applied Sciences. Submitted paper.
+ 	</literature>
+	<formalization language="CafeOBJ" location="Compensate.pat"/>
+	<related-patterns>
+		<pattern-link type="related-to" patternID="99" collection="candidates" label="increase awareness"/>
+	</related-patterns>
+	<management>
+		<author>Benno Schmidt</author>
+		<revision-number>0.2</revision-number>
+		<creation-date>01.07.2019</creation-date>
+		<last-modified>08.07.2019</last-modified>
+	</management>
+</pattern>
