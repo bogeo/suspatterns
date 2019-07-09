@@ -1,0 +1,27 @@
+-- ----------------------------------------------------------------------------
+-- Sustainable Software Design Pattern Candidates 
+-- CafeOBJ encoding
+-- Geovisualization Lab, Bochum University of Applied Sciences
+
+in susConcepts .
+in UmlConcepts .
+
+mod DontStreamTwice {
+  
+  -- Participants:
+  [ Doc ]
+  ops (_stream)(_removeFromCache) : Doc -> Doc .   
+  pred inCache : Doc .
+
+  -- Collaborations:
+  var d : Doc .
+  eq inCache(d stream) = true .
+  eq inCache(d removeFromCache) = false .
+}
+
+open DontStreamTwice .
+  red inCache(d) .
+  red inCache(d stream) .
+  red inCache(d stream removeFromCache) .
+  red inCache(d stream removeFromCache stream) .
+close .

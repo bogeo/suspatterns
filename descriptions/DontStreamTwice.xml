@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<pattern patternID="2" collection="candidates" 
+		xsi:noNamespaceSchemaLocation="../plml/plml_bo-2.0.xsd" 
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<name>Don't Stream Twice</name>
+	<alias>Cache Streamed Document</alias>
+	<problem>
+		Often streamable Web content is accessed twice. Thus, unnecessarily
+		Internet traffic is induced. The consequences are manifold: This
+		data transfer costs electric energy (Web-server, Web-client, and
+		transmission). Moreover, on the user side, data volume my be consumed.
+	</problem>
+	<solution>
+		Store the streamed content in a cache on the user's local computer.
+	</solution>
+	<formalization language="CafeOBJ" location="DontStreamTwice.cafe"/>
+	<management>
+		<author>Benno Schmidt</author>
+		<revision-number>0.1</revision-number>
+		<creation-date>08.07.2019</creation-date>
+		<last-modified>08.07.2019</last-modified>
+	</management>
+</pattern>
