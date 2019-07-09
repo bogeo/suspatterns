@@ -1,1 +1,2 @@
 *.pat linguist-language=
+*.pat linguist-detectable=false
