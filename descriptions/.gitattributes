@@ -1,4 +1,1 @@
-*.pat linguist-language=
-*.pat linguist-detectable=false
-*.pat linguist-vendored=true
-*.pat text
+*.pat linguist-language=text
