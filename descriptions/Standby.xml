@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<pattern patternID="4" collection="candidates" 
+		xsi:noNamespaceSchemaLocation="../plml/plml_bo-2.0.xsd" 
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<name>Standby operation</name>
+	<alias>Sleep mode</alias>
+	<alias>Suspend</alias>
+	<problem>
+		The computer supplying software components consumes electric energy 
+		although no software is in use.
+	</problem>
+	<solution>
+		Let the computer enter a sleep state, i.e. pause the state of the 
+		machine. When restored, the operation continues from the same point,
+		offering the same applications, having the same files open, being in
+		exactly in the same state as when paused. Basically, there will be some
+		controversy as to whether this is a sustainability pattern or whether 
+		just energy efficiency is increased.
+	</solution>
+	<formalization language="CafeOBJ" location="Standby.cafe"/>
+	<related-patterns>
+		<pattern-link type="related-to" 
+			patternID="99" collection="candidates" label="increase awareness"/>
+	</related-patterns>
+	<management>
+		<author>Benno Schmidt</author>
+		<revision-number>0.1</revision-number>
+		<creation-date>12.07.2019</creation-date>
+		<last-modified>12.07.2019</last-modified>
+	</management>
+</pattern>

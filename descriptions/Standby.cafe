@@ -1,0 +1,43 @@
+-- ----------------------------------------------------------------------------
+-- Sustainable Software Design Pattern Candidates 
+-- CafeOBJ encoding
+-- Geovisualization Lab, Bochum University of Applied Sciences
+
+in UmlConcepts .
+in SusConcepts .
+
+mod StandBy {
+
+  -- Participants:  
+  [ uml$Executable Mode ]
+  op sys : -> uml$Executable .
+  op _freeze : uml$Executable -> uml$Executable .
+  op _wakeup : uml$Executable -> uml$Executable .
+  op _exceedIdleTime : uml$Executable -> uml$Executable .
+  
+  -- Collaborations:
+  pred inStandByMode : uml$Executable .
+  var s : uml$Executable .
+  eq inStandByMode(s freeze) = true .
+  eq inStandByMode(s wakeup) = false .  
+  trans s exceedIdleTime => s freeze .
+  
+  [ sus$Energy ] 
+  op savedEnergy : uml$Executable -> sus$Energy .
+  op E : -> sus$Energy .  -- some amount of energy (greater than zero)
+  eq savedEnergy(s freeze) = E .
+  eq savedEnergy(s wakeup) = savedEnergy(s) .  
+}
+
+open StandBy .
+  -- Postcondition:
+  -- goal = (savedEnergy(sys ...) == E).
+  -- Example:
+  let testrun = sys wakeup freeze wakeup exceedIdleTime .
+  exec inStandByMode(testrun) .
+  exec savedEnergy(testrun) .
+  -- Preconditions:
+  let run = sys freeze .  -- 'sys exceedIdleTime' would do, too.
+  -- Proof:
+  exec savedEnergy(run) == E .  -- will deliver the value 'true'  
+close .
