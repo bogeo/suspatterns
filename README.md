@@ -18,5 +18,29 @@ Notwithstanding, in order to support software developers, there is the demand to
 ### CafeOBJ
 To run the pattern descriptions given in CafeOBJ syntax (recognizable by the language attribute inside the PLML-based descriptions: <formalization language="CafeOBJ" ...>), you have to install CafeOBJ on your computer, which is freely available [here](https://cafeobj.org/).
 
+## Pattern overview
+### Backward compatibility
+To be added soon...
+### Cache Streamed Document
+Alias for "Don't Stream Twice".
+### Compensate
+See Compensate.xml.
+### Component replaceability
+To be added soon...
+### Don't Stream Twice
+See DontStreamTwice.xml.
+### Open source
+To be added soon...
+### Regenerative operation
+Alias for "Compensate".
+### Sleep mode
+Alias for "Standby operation".
+### Standy operation
+See Standy.xml.
+### Suspend
+Alias for "Standby operation".
+### Sustainability awareness
+To be added soon...
+ 
 ## More information
 Contact: Benno Schmidt, Geovisualization Lab, Bochum University of Applied Sciences, Lennershofstr. 140, D-44801 Bochum.
