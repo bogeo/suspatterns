@@ -20,15 +20,21 @@ To run the pattern descriptions given in CafeOBJ syntax (recognizable by the lan
 
 ## Pattern overview
 ### Backward compatibility
-To be added soon...
+This is an important approach to avoid hardware obsolescence effects caused by the software. To be added soon...
 ### Cache Streamed Document
 Alias for "Don't Stream Twice".
 ### Compensate
 See Compensate.xml.
+### Component leaflets
+To be added soon...
 ### Component replaceability
 To be added soon...
 ### Don't Stream Twice
 See DontStreamTwice.xml.
+### Expressive logging
+We are not sure whether this really is a pattern - maybe this is rather a guideline. A description has not been added to this repository.
+### General shortcut
+We are not sure whether this really is a pattern (a matter of granularity...). However, a description has not been added yet.
 ### Open source
 To be added soon...
 ### Regenerative operation
@@ -40,7 +46,11 @@ See Standy.xml.
 ### Suspend
 Alias for "Standby operation".
 ### Sustainability awareness
-To be added soon...
+We are not sure whether this really is a pattern (since socio-technical system elements interact here). However, a description will be added soon...
+### Virtual machine
+We are not sure whether this really is a pattern. A description might be added soon...
+ 
+What are your ideas? (You're are welcome to participate in this project! Feel free to contact us.)
  
 ## More information
 Contact: Benno Schmidt, Geovisualization Lab, Bochum University of Applied Sciences, Lennershofstr. 140, D-44801 Bochum.
