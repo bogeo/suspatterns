@@ -15,7 +15,7 @@
 		offering the same applications, having the same files open, being in
 		exactly in the same state as when paused. Basically, there will be some
 		controversy as to whether this is a sustainability pattern or whether 
-		just energy efficiency is increased.
+		just energy efficiency is increased. 
 	</solution>
 	<formalization language="CafeOBJ" location="Standby.cafe"/>
 	<related-patterns>

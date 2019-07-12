@@ -39,5 +39,5 @@ open StandBy .
   -- Preconditions:
   let run = sys freeze .  -- 'sys exceedIdleTime' would do, too.
   -- Proof:
-  exec savedEnergy(run) == E .  -- will deliver the value 'true'  
+  exec savedEnergy(run) == E .  -- will deliver the value 'true'
 close .
