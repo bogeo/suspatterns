@@ -60,7 +60,7 @@ Here used as an alias for "Open Source".
 ### Sleep Mode
 Alias for "Standby Operation".
 ### Standy Operation
-See Standy.xml.
+See Standby.xml.
 ### Suspend
 Alias for "Standby Operation".
 ### Sustainability Awareness

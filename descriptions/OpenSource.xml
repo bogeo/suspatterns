@@ -20,6 +20,12 @@
 			awareness (see related pattern).
 		</rationale>
 	</evidence>
+	<literature>
+		<ref>
+			Busch, T. (2008): Open Source und Nachhaltigkeit. Open Source 
+			Jahrbuch 2008, TU Berlin.
+		</ref>
+	</literature>
 	<formalization language="CafeOBJ" location="OpenSource.cafe"/>
 	<related-patterns>
 		<pattern-link type="is-contained-by" 

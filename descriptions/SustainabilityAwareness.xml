@@ -23,11 +23,13 @@
 	</rationale>
 	</evidence>
 	<literature>
-	 	Schmidt, B.; Wytzisk, A. (2019): Nachhaltigkeitsaspekte in der 
-		Softwareentwicklung. In: Englert, M.; Ternes, A. (eds.): Nachhaltiges
-		Management. Berlin: Springer, pp. 651-668.
+		<ref>
+			Schmidt, B.; Wytzisk, A. (2019): Nachhaltigkeitsaspekte in der 
+			Softwareentwicklung. In: Englert, M.; Ternes, A. (eds.): 
+			Nachhaltiges Management. Berlin: Springer, pp. 651-668.
+		</ref>
  	</literature>
-	<formalization/>
+	<formalization language="" location=""/>
 	<related-patterns>
 		<pattern-link type="related-to" patternID="1" collection="candidates" 
 			label="compensate energy consumption"/>

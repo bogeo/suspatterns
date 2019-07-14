@@ -20,9 +20,11 @@
 	</solution>
 	<diagram location="Compensate.jpg"/>
 	<literature>
-	 	Schmidt, B. (2019): Towards a Formal Language to Describe Sustainable 
-		Software Patterns. Bochum: University of Applied Sciences. Submitted 
-		paper.
+		<ref>
+			Schmidt, B. (2019): Towards a Formal Language to Describe 
+			Sustainable Software Patterns. Bochum: University of Applied 
+			Sciences. Submitted paper.
+		</ref>
  	</literature>
 	<formalization language="CafeOBJ" location="Compensate.cafe"/>
 	<related-patterns>

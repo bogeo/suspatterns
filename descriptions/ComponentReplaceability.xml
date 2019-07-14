@@ -13,7 +13,7 @@
 		this, the often the presence of suitable system-internal interfaces is
 		a pre-requisiste. 
 	</solution>
-	<formalization/>
+	<formalization language="" location=""/>
 	<related-patterns>
 		<pattern-link type="related-to" patternID="5" collection="candidates" 
 			label="provide component leaflets"/>

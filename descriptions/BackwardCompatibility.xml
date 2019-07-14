@@ -1,4 +1,4 @@
-<?xml version="1.0" ?>s
+<?xml version="1.0" ?>
 <pattern patternID="6" collection="candidates" 
 		xsi:noNamespaceSchemaLocation="../plml/plml_bo-2.0.xsd" 
 		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
@@ -23,16 +23,23 @@
 		</rationale>
 	</evidence>
 	<literature>
-	 	Kern, E.; Hilty, L.M.; Guldner, A.; Maksimov, Y.V.; Filler, A.; Gröger, 
-		J.; Naumann, S. (2018): Sustainable Software Products - Towards 
-		assessment criteria for resource and energy. Future Generation Computer 
-		Systems, Vol. 86, pp. 199-210.
-		Federal Agency of Environment (Umweltbundesamt), eds. (2017): 
-		Kriterienkatalog für nachhaltige Software, UFOPLAN FKZ-Nr. 
-		3715 37 601 0.
-		Federal Agency of Environment (Umweltbundesamt): Project REFOPLAN. 
+		<ref>
+			Kern, E.; Hilty, L.M.; Guldner, A.; Maksimov, Y.V.; Filler, A.; 
+			Gröger, J.; Naumann, S. (2018): Sustainable Software Products - 
+			Towards assessment criteria for resource and energy. Future 
+			Generation Computer Systems, Vol. 86, pp. 199-210.
+		</ref>
+		<ref>
+			Umweltbundesamt, eds. (2017): Kriterienkatalog für nachhaltige 
+			Software, Project UFOPLAN FKZ-Nr. 3715 37 601 0, Berlin: Federal 
+			Environment Agency.
+		</ref>
+		<ref>
+			Umweltbundesamt, eds.: Project REFOPLAN. Berlin: Federal 
+			Environment Agency, work in progress.
+		</ref>
  	</literature>
-	<formalization/>
+	<formalization language="" location=""/>
 	<related-patterns>
 		<pattern-link type="related-to" patternID="7" collection="candidates" 
 			label="support component replaceability"/>

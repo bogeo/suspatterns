@@ -20,11 +20,17 @@
 		</rationale>
 	</evidence>
 	<literature>
-		Federal Agency og Environment (Umweltbundesamt), eds. (2017): 
-		Kriterienkatalog für nachhaltige Software, UFOPLAN FKZ-Nr. 
-		3715 37 601 0.
+		<ref>
+			Umweltbundesamt, eds. (2017): Kriterienkatalog für nachhaltige 
+			Software, Project UFOPLAN FKZ-Nr. 3715 37 601 0, Berlin: Federal 
+			Environment Agency.
+		</ref>
+		<ref>
+			Umweltbundesamt, eds.: Project REFOPLAN. Berlin: Federal 
+			Environment Agency, work in progress.
+		</ref>
  	</literature>
-	<formalization/>
+	<formalization language="" location=""/>
 	<management>
 		<author>Benno Schmidt</author>
 		<revision-number>0.1</revision-number>

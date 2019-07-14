@@ -30,7 +30,13 @@
 					</xsd:complexType>
 				</xsd:element>
 				<xsd:element name="confidence" type="xsd:string" minOccurs="0" maxOccurs="1"/>
-				<xsd:element name="literature" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+				<xsd:element name="literature" minOccurs="0" maxOccurs="1">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="ref" minOccurs="0" maxOccurs="unbounded"/>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
 				<xsd:element name="implementation" maxOccurs="1" minOccurs="0"/>
 				<xsd:element name="formalization" minOccurs="0" maxOccurs="1">
 					<xsd:complexType>
