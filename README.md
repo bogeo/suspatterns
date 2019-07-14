@@ -108,7 +108,7 @@ In the CafeOBJ console, just change to the folder holding the pattern descriptio
     (0.0000 sec for parse, 0.0000 sec for 10 rewrites + 13 matches)
     CafeOBJ>
  
-The goal to make the system more sustainable, is `true`. This is the result we want. 
+The goal to obtain a more sustainable system is achieved, since the goal term is reduced to `true`. 
  
 ## More information
 Contact: Benno Schmidt, Geovisualization Lab, Bochum University of Applied Sciences, Lennershofstr. 140, D-44801 Bochum.
