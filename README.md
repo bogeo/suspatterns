@@ -33,6 +33,9 @@ software design patterns to achieve this goal are not given yet inside this expe
 description will be added soon to this experimental repository...
 ### Cache Streamed Document
 Alias for "Don't Stream Twice".
+### (Circuit Breaker)
+(This prominent stability pattern represents the huge group of patterns from another domains that deserve further examination 
+with respect to sustainability issues.)
 ### Compensate
 This describes the basic approach to neutralize resource comsumption by suitable compensation measures. 
 See [Compensate.xml](descriptions/Compensate.xml).
