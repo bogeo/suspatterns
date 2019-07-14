@@ -88,8 +88,8 @@ What are your ideas?
 
 ## Running the specification code
 To execute the pattern descriptions given in CafeOBJ syntax (recognizable by the language attribute inside the PLML-based 
-descriptions: <formalization language="CafeOBJ" ...>), you have to install CafeOBJ on your computer, which is freely available 
-[here](https://cafeobj.org/). 
+descriptions: `<formalization language="CafeOBJ" ...>`), you have to install CafeOBJ on your computer, which is freely 
+available [here](https://cafeobj.org/). 
 
 In the CafeOBJ console, just change to the folder holding the pattern descriptions and load the desired .cafe files. Example:
 
@@ -97,7 +97,7 @@ In the CafeOBJ console, just change to the folder holding the pattern descriptio
     /projects/suspatterns/descriptions
     CafeOBJ> in Compensate.cafe
 
-    processing input : /projects/suspatterns/descriptions\Compensate.cafe
+    processing input : /projects/suspatterns/descriptions/Compensate.cafe
     -- reading in file  : susConcepts
     ...
  
@@ -108,7 +108,7 @@ In the CafeOBJ console, just change to the folder holding the pattern descriptio
     (0.0000 sec for parse, 0.0000 sec for 10 rewrites + 13 matches)
     CafeOBJ>
  
-The goal to obtain a more sustainable system is achieved, since the goal term is reduced to `true`. 
+The goal to get a more sustainable system is achieved here, since the goal term is reduced to `true`. 
  
 ## More information
 Contact: Benno Schmidt, Geovisualization Lab, Bochum University of Applied Sciences, Lennershofstr. 140, D-44801 Bochum.
