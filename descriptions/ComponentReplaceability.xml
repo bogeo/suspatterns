@@ -2,8 +2,8 @@
 <pattern patternID="7" collection="candidates" 
 		xsi:noNamespaceSchemaLocation="../plml/plml_bo-2.0.xsd" 
 		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-	<name>ComponentReplaceability</name>
-	<alias>ChangeInterfaceImpementation</alias>
+	<name>Component Replaceability</name>
+	<alias>Switch Implementation</alias>
 	<problem>
 		A software system can not be used in sustainable manner or can not be
 		used at all where the responsible software component os known.

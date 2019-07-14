@@ -34,8 +34,6 @@ design patterns to achieve this goal are not given yet inside this experimental 
 for some more comments about this. However, a first formal description will be added soon to this experimental repository...
 ### Cache Streamed Document
 Alias for "Don't Stream Twice".
-### Change Interface Implementation
-Here an alias for "Component Replaceability".
 ### Compensate
 See Compensate.xml.
 ### Component Leaflets
@@ -49,19 +47,19 @@ We are not sure whether this really is a pattern - maybe this is rather a guidel
 repository.
 ### General Shortcut
 We are not sure whether this really is a pattern (a matter of granularity...). However, a description has not been added yet.
-### Open source
+### Open Source
 See OpenSource.xml.
-### Psi increase
+### Psi Increase
 Alias for "Sustainability Awareness".
-### Regenerative operation
+### Regenerative Operation
 Alias for "Compensate".
 ### Removability
 Removability of software and data that is no longer needed should be supported explictly. See Uninstall.xml.
 ### Repair
 Here used as an alias for "Open Source".
-### Sleep mode
+### Sleep Mode
 Alias for "Standby Operation".
-### Standy operation
+### Standy Operation
 See Standy.xml.
 ### Suspend
 Alias for "Standby Operation".
@@ -71,9 +69,11 @@ between human stakeholders and the software plays an important role here. Thus t
 added as candidate to the repository. (A formal description will be added.)
 ### Sustainable Parts
 Alias for "Component Leaflets".
+### Switch Implementation
+Here an alias for "Component Replaceability".
 ### Uninstall
 See Uninstall.xml.
-### Virtual machine
+### Virtual Machine
 We are not sure whether this really is a pattern. A description might be added soon...
  
 What are your ideas? 
