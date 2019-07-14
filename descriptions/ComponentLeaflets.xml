@@ -1,0 +1,34 @@
+<?xml version="1.0" ?>
+<pattern patternID="5" collection="candidates" 
+		xsi:noNamespaceSchemaLocation="../plml/plml_bo-2.0.xsd" 
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<name>Component Leaflets</name>
+	<alias>Sustainable Parts</alias>
+	<problem>
+		Since most modern software systems usually intensively make use of 
+		third-party components, it is difficult to provide systems which are
+		not built from insustainable parts.
+	</problem>
+	<solution>
+		One approach would be to provide information about the used parts,
+		e.g. in the form of "information leaflets", and to assist the software 
+		developer when part selection decisions have to be made. 
+	</solution>
+	<literature>
+	 	Schmidt, B. (2016): Sustainability Knowledge about Software Parts in Software Engineering Processes. 4th Intern. Conf. on Sustainability
+ (ICT4S).
+ 	</literature>
+	<formalization language="CafeOBJ" location="SustainableParts.cafe"/>
+	<related-patterns>
+		<pattern-link type="related-to" 
+			patternID="7" collection="candidates" label="component replaceability"/>
+		<pattern-link type="related-to" 
+			patternID="99" collection="candidates" label="increase awareness"/>
+	</related-patterns>
+	<management>
+		<author>Benno Schmidt</author>
+		<revision-number>0.1</revision-number>
+		<creation-date>14.07.2019</creation-date>
+		<last-modified>14.07.2019</last-modified>
+	</management>
+</pattern>

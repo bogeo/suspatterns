@@ -1,0 +1,48 @@
+-- ----------------------------------------------------------------------------
+-- Sustainable Software Design Pattern Candidates 
+-- CafeOBJ encoding
+-- Geovisualization Lab, Bochum University of Applied Sciences
+
+in UmlConcepts .
+in SusConcepts .
+
+mod SustainableParts {
+  
+  -- Participants:  
+  [ Func, Part < uml$Component, uml$Executable, sus$LoS ]
+  var app : uml$Executable .  
+  var f : Func .  
+  ops p1 p2 : -> Part .
+  
+  -- Implicit assumption: "Information leaflets"have been are provided
+  
+  -- Collaborations:
+  pred _provides_ : Part Func
+  pred _requires_ : uml$Executable Func
+  op sus : Part -> sus$LoS  -- ToDo: Maybe consider operating conditions
+  op preferredPart : uml$Executable Func -> Part
+  ceq preferredPart(app, f) = opt(p1, p2) 
+    if app requires f and p1 provides f and p2 provides f .
+  -- else:
+  --  ceq preferredPart(app, f) = p1 if app requires f and p1 provides f .
+  --  ceq preferredPart(app, f) = p2 if app requires f and p2 provides f .
+  op opt : Part Part -> Part
+  vars p p' : Part
+  eq opt(p, p') = if sus(p) > sus(p') then p else p' fi .  
+}
+
+open SustainableParts .
+  -- Postcondition:
+  let goal = sus(preferredPart(app, f)) >= 0 .
+  red goal .
+  -- Preconditions:
+  eq app requires f = true . 
+  eq p1 provides f = true .
+  eq p2 provides f = true .
+  eq sus(p1) = minus .
+  eq sus(p2) = plus .
+  -- eq sus(p1) > sus(p2) = true .  -- I.e., "information leaflet" is available
+  -- Proof:
+  red preferredPart(app, f) .  -- is decidable now; should be reduced to 'p2'
+  red goal .
+close .

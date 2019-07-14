@@ -35,6 +35,8 @@ design patterns to achieve this goal are not given yet inside this experimental 
 for some more comments about this. However, a first formal description will be added soon to this experimental repository...
 ### Cache Streamed Document
 Alias for "Don't Stream Twice".
+### Change Interface Impementation
+Here an alias for "Component Replaceability".
 ### Compensate
 See Compensate.xml.
 ### Component leaflets
