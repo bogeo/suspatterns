@@ -3,6 +3,7 @@
 		xsi:noNamespaceSchemaLocation="../plml/plml_bo-2.0.xsd" 
 		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<name>Open Source</name>
+	<alias>Repair</alias>
 	<problem>
 		A software lacks functionality or can not be used anymore since the 
 		technical environment changed. 
@@ -13,14 +14,21 @@
 		and know-how to change the software as well as a suitable build 
 		environment.
 	</solution>
+	<evidence>
+		<rationale>
+			Implementation of this "pattern" might raise sustainability 
+			awareness (see related pattern).
+		</rationale>
+	</evidence>
 	<formalization language="CafeOBJ" location="OpenSource.cafe"/>
 	<related-patterns>
-		<pattern-link type="related-to" 
-			patternID="99" collection="candidates" label="increase awareness"/>
+		<pattern-link type="is-contained-by" 
+			patternID="99" collection="candidates" 
+			label="raise sustainability awareness"/>
 	</related-patterns>
 	<management>
 		<author>Benno Schmidt</author>
-		<revision-number>0.1</revision-number>
+		<revision-number>0.2</revision-number>
 		<creation-date>14.07.2019</creation-date>
 		<last-modified>14.07.2019</last-modified>
 	</management>

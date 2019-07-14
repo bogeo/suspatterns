@@ -15,10 +15,10 @@
 	</solution>
 	<formalization/>
 	<related-patterns>
-		<pattern-link type="related-to" 
-			patternID="5" collection="candidates" label="component leaflets"/>
-		<pattern-link type="related-to" 
-			patternID="6" collection="candidates" label="backward compatibility"/>
+		<pattern-link type="related-to" patternID="5" collection="candidates" 
+			label="provide component leaflets"/>
+		<pattern-link type="related-to" patternID="6" collection="candidates" 
+			label="assure backward compatibility"/>
 	</related-patterns>
 	<management>
 		<author>Benno Schmidt</author>

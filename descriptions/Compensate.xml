@@ -26,13 +26,13 @@
  	</literature>
 	<formalization language="CafeOBJ" location="Compensate.cafe"/>
 	<related-patterns>
-		<pattern-link type="related-to" 
-			patternID="99" collection="candidates" label="increase awareness"/>
+		<pattern-link type="related-to" patternID="99" collection="candidates" 
+			label="raise sustainability awareness"/>
 	</related-patterns>
 	<management>
 		<author>Benno Schmidt</author>
-		<revision-number>0.2</revision-number>
+		<revision-number>0.3</revision-number>
 		<creation-date>01.07.2019</creation-date>
-		<last-modified>09.07.2019</last-modified>
+		<last-modified>14.07.2019</last-modified>
 	</management>
 </pattern>

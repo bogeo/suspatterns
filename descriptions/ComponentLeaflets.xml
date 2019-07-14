@@ -15,19 +15,21 @@
 		developer when part selection decisions have to be made. 
 	</solution>
 	<literature>
-	 	Schmidt, B. (2016): Sustainability Knowledge about Software Parts in Software Engineering Processes. 4th Intern. Conf. on Sustainability
- (ICT4S).
+	 	Schmidt, B. (2016): Sustainability Knowledge about Software Parts in 
+		Software Engineering Processes. 4th Intern. Conf. on Sustainability 
+		(ICT4S).
  	</literature>
 	<formalization language="CafeOBJ" location="SustainableParts.cafe"/>
 	<related-patterns>
-		<pattern-link type="related-to" 
-			patternID="7" collection="candidates" label="component replaceability"/>
-		<pattern-link type="related-to" 
-			patternID="99" collection="candidates" label="increase awareness"/>
+		<pattern-link type="related-to" patternID="7" collection="candidates" 
+			label="support component replaceability"/>
+		<pattern-link type="is-contained-by" 
+			patternID="99" collection="candidates" 
+			label="raise sustainability awareness"/>
 	</related-patterns>
 	<management>
 		<author>Benno Schmidt</author>
-		<revision-number>0.1</revision-number>
+		<revision-number>0.2</revision-number>
 		<creation-date>14.07.2019</creation-date>
 		<last-modified>14.07.2019</last-modified>
 	</management>

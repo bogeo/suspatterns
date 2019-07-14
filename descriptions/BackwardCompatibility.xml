@@ -9,26 +9,40 @@
 	<solution>
 		The software producer ensures that the new software release runs on the 
 		old machine. Since ICT permanently undergoes evelutionary developments,  
-		it will be hard to ensure this. - However, this gives more a 
-		postulation than a software design pattern. Maybe in the future we 
-		can identify some concrete patterns which allow to achieve this goal. 
-		Some clues could be provided by a formal description (what still is a 
-		ToDo; however, the system to be described formally could include 
-		product stakeholders such as the user or product managers as well  
-		as the machine which might become obsolescent or system-internal 
-		interfaces as participants).
+		it will be hard to ensure this. 
 	</solution>
+	<evidence>
+		<rationale>
+			However, this gives more a postulation than a software design 
+			pattern. Maybe in the future we can identify some concrete patterns
+			which allow to achieve this goal. Some clues could be provided by a 
+			formal description (what still is a ToDo; however, the system to be 
+			described formally could include product stakeholders such as the 
+			user or product managers as well as the machine which might become 
+			obsolescent or system-internal interfaces as participants).
+		</rationale>
+	</evidence>
 	<literature>
-	 	Kern, E.; Dick, M.; Naumann, S.; Filler, A. (2015): Labelling Sustainable Software Products and Websites. 3rd Intern. Conf. on ICT for Sustainability (ICT4S 2015) / EnviroInfo 2015, pp. 82-91. 
+	 	Kern, E.; Hilty, L.M.; Guldner, A.; Maksimov, Y.V.; Filler, A.; Gröger, 
+		J.; Naumann, S. (2018): Sustainable Software Products - Towards 
+		assessment criteria for resource and energy. Future Generation Computer 
+		Systems, Vol. 86, pp. 199-210.
+		Federal Agency of Environment (Umweltbundesamt), eds. (2017): 
+		Kriterienkatalog für nachhaltige Software, UFOPLAN FKZ-Nr. 
+		3715 37 601 0.
+		Federal Agency of Environment (Umweltbundesamt): Project REFOPLAN. 
  	</literature>
 	<formalization/>
 	<related-patterns>
-		<pattern-link type="related-to" 
-			patternID="7" collection="candidates" label="component replaceability"/>
+		<pattern-link type="related-to" patternID="7" collection="candidates" 
+			label="support component replaceability"/>
+		<pattern-link type="is-contained-by" 
+			patternID="99" collection="candidates"
+			label="raise sustainability awareness"/>
 	</related-patterns>
 	<management>
 		<author>Benno Schmidt</author>
-		<revision-number>0.1</revision-number>
+		<revision-number>0.2</revision-number>
 		<creation-date>14.07.2019</creation-date>
 		<last-modified>14.07.2019</last-modified>
 	</management>
