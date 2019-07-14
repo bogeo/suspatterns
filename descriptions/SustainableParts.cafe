@@ -7,6 +7,7 @@ in UmlConcepts .
 in SusConcepts .
 
 mod SustainableParts {
+  pr(SusConcepts) 
   
   -- Participants:  
   [ Func, Part < uml$Component, uml$Executable, sus$LoS ]
@@ -14,7 +15,7 @@ mod SustainableParts {
   var f : Func .  
   ops p1 p2 : -> Part .
   
-  -- Implicit assumption: "Information leaflets"have been are provided
+  -- Implicit assumption: "Information leaflets" have been are provided
   
   -- Collaborations:
   pred _provides_ : Part Func
@@ -27,7 +28,7 @@ mod SustainableParts {
   --  ceq preferredPart(app, f) = p1 if app requires f and p1 provides f .
   --  ceq preferredPart(app, f) = p2 if app requires f and p2 provides f .
   op opt : Part Part -> Part
-  vars p p' : Part
+  vars p p' : Part .
   eq opt(p, p') = if sus(p) > sus(p') then p else p' fi .  
 }
 

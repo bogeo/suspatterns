@@ -23,9 +23,7 @@ note that this is all is work-in-progress and that your participation is appreci
 * [Planet (Pattern LAnguage NETwork)](https://patternlanguagenetwork.wordpress.com)
 
 ### CafeOBJ
-To run the pattern descriptions given in CafeOBJ syntax (recognizable by the language attribute inside the PLML-based 
-descriptions: <formalization language="CafeOBJ" ...>), you have to install CafeOBJ on your computer, which is freely available 
-[here](https://cafeobj.org/).
+* [CafeOBJ Homepage](https://cafeobj.org/).
 
 ## Pattern overview
 ### Backward Compatibility
@@ -77,6 +75,30 @@ See Uninstall.xml.
 We are not sure whether this really is a pattern. A description might be added soon...
  
 What are your ideas? 
+
+## Running the specification code
+To execute the pattern descriptions given in CafeOBJ syntax (recognizable by the language attribute inside the PLML-based 
+descriptions: <formalization language="CafeOBJ" ...>), you have to install CafeOBJ on your computer, which is freely available 
+[here](https://cafeobj.org/). 
+
+In the CafeOBJ console, just change to the folder holding the pattern descriptions and load the desired .cafe files. Example:
+
+    CafeOBJ> cd /projects/suspatterns/descriptions
+    /projects/suspatterns/descriptions
+    CafeOBJ> in Compensate.cafe
+
+    processing input : C:\projects\suspatterns\descriptions\Compensate.cafe
+    -- reading in file  : susConcepts
+    ...
+ 
+    -- opening module Compensate done.
+    ...
+    -- reduce in %Compensate : (compensated(emission(consume(S)),Us)):Bool
+    (true):Bool
+    (0.0000 sec for parse, 0.0000 sec for 10 rewrites + 13 matches)
+    CafeOBJ>
+ 
+The goal to make the system more sustainable, is `true`. This is the result we want. 
  
 ## More information
 Contact: Benno Schmidt, Geovisualization Lab, Bochum University of Applied Sciences, Lennershofstr. 140, D-44801 Bochum.
