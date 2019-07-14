@@ -1,0 +1,45 @@
+<?xml version="1.0" ?>
+<pattern patternID="99" collection="candidates" 
+		xsi:noNamespaceSchemaLocation="../plml/plml_bo-2.0.xsd" 
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<name>Sustainability Awareness</name>
+	<alias>Psi increase</alias>
+	<problem>
+		Some stakeholders (here: software users, software developers, 
+		product managers, software operators, etc.) do not yet care about 
+		sustainability issues. The reasons for this are manifold, e.g. 
+		missing sustainability knowledge.
+	</problem>
+	<solution>
+		Sensitize the stakeholders for this topic by raising awareness 
+		about software sustainability issues. E.g., this can be done by making
+		relevant software concepts transparent for the general public. Since
+		the interaction between human stakeholders and the software plays
+		an important role, this strategic approach has been registered as 
+		pattern candidate here.
+	</solution>
+	<literature>
+	 	Schmidt, B.; Wytzisk, A. (2019): Nachhaltigkeitsaspekte in der 
+		Softwareentwicklung. In: Englert, M.; Ternes, A. (eds.): Nachhaltiges
+		Management. Berlin: Springer, pp. 651-668.
+ 	</literature>
+	<formalization/>
+	<related-patterns>
+		<pattern-link type="contains" 
+			patternID="1" collection="candidates" label="compensate"/>
+		<pattern-link type="contains" 
+			patternID="3" collection="candidates" label="open source"/>
+		<pattern-link type="contains" 
+			patternID="4" collection="candidates" label="standby"/>
+		<pattern-link type="contains" 
+			patternID="5" collection="candidates" label="component leaflets"/>
+		<pattern-link type="contains" 
+			patternID="6" collection="candidates" label="backward compatibility"/>
+	</related-patterns>
+	<management>
+		<author>Benno Schmidt</author>
+		<revision-number>0.1</revision-number>
+		<creation-date>14.07.2019</creation-date>
+		<last-modified>14.07.2019</last-modified>
+	</management>
+</pattern>
