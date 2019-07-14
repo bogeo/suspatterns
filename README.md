@@ -84,7 +84,7 @@ See [Uninstall.xml](descriptions/Uninstall.xml).
 ### Virtual Machine
 We are not sure whether this really is a pattern. A description might be added soon...
  
-What are your ideas? 
+What are your ideas?
 
 ## Running the specification code
 To execute the pattern descriptions given in CafeOBJ syntax (recognizable by the language attribute inside the PLML-based 
