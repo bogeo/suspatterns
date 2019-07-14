@@ -30,7 +30,9 @@ descriptions: <formalization language="CafeOBJ" ...>), you have to install CafeO
 
 ## Pattern overview
 ### Backward compatibility
-This is an important approach to avoid hardware obsolescence effects caused by the software. To be added soon...
+This is an important approach to avoid hardware obsolescence effects caused by the software. Unfortunately, detailed software 
+design patterns to achieve this goal are not given yet inside this experimental repository. But see BackwardCompatibility.xml
+for some more comments about this. However, a first formal description will be added soon to this experimental repository...
 ### Cache Streamed Document
 Alias for "Don't Stream Twice".
 ### Compensate
