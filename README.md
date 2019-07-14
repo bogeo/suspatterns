@@ -27,20 +27,23 @@ note that this is all is work-in-progress and that your participation is appreci
 
 ## Pattern overview
 ### Backward Compatibility
-This is an important approach to avoid hardware obsolescence effects caused by the software. Unfortunately, detailed software 
-design patterns to achieve this goal are not given yet inside this experimental repository. But see BackwardCompatibility.xml
-for some more comments about this. However, a first formal description will be added soon to this experimental repository...
+This is an important approach to avoid hardware obsolescence effects caused by the software. Unfortunately, detailed 
+software design patterns to achieve this goal are not given yet inside this experimental repository. But see 
+[BackwardCompatibility.xml](descriptions/BackwardCompatibility.xml) for some more comments about this. However, a first formal 
+description will be added soon to this experimental repository...
 ### Cache Streamed Document
 Alias for "Don't Stream Twice".
 ### Compensate
-This describes the basic approach to neutralize resource comsumption by suitable compensation measures. See Compensate.xml.
+This describes the basic approach to neutralize resource comsumption by suitable compensation measures. 
+See [Compensate.xml](descriptions/Compensate.xml).
 ### Component Leaflets
 The idea is to provide "information leaflets" providing artifact information about sustainability-relevant issues such as
-energy comsumption, hardware requirements etc. See ComponentLeaflets.xml.
+energy comsumption, hardware requirements etc. See [ComponentLeaflets.xml](descriptions/ComponentLeaflets.xml).
 ### Component Replaceability
-Principally, this reflects the "Design for Replaceability" idea. See ComponentReplaceability.xml.
+Principally, this reflects the "Design for Replaceability" idea. 
+See [ComponentReplaceability.xml](descriptions/ComponentReplaceability.xml).
 ### Don't Stream Twice
-See DontStreamTwice.xml (avoid unnecessary data transfers resp. Internet traffic).
+See [DontStreamTwice.xml](descriptions/DontStreamTwice.xml) (avoid unnecessary data transfers resp. Internet traffic).
 ### Expressive Logging
 We are not sure whether this really is a pattern - maybe this is rather a guideline. A description has not been added to this 
 repository.
@@ -49,31 +52,32 @@ We are not sure whether this really is a pattern (a matter of granularity...). H
 ### Open Source
 It is said, the open source philosophy and the practices behind open source development contribute to software with a higher
 degree of sustainabilty. Certainly this deserves further examination! However, the "repairability" aspect that is described
-here (see OpenSource.xml) gives just one facet of the idea behind open source.
+here (see [OpenSource.xml](descriptions/OpenSource.xml)) gives just one facet of the idea behind open source.
 ### Psi Increase
 Alias for "Sustainability Awareness".
 ### Regenerative Operation
 Alias for "Compensate".
 ### Removability
-Removability of software and data that is no longer needed should be supported explictly. See Uninstall.xml.
+Removability of software and data that is no longer needed should be supported explictly. 
+See [Uninstall.xml](descriptions/Uninstall.xml).
 ### Repair
 Here just used as an alias for "Open Source".
 ### Sleep Mode
 Alias for "Standby Operation".
 ### Standy Operation
-See Standby.xml.
+See [Standby.xml](descriptions/Standby.xml).
 ### Suspend
 Alias for "Standby Operation".
 ### Sustainability Awareness
-See SustainabilityAwareness.xml. We are not sure whether this strategic approach really is a pattern. However, interaction 
-between human stakeholders and the software plays an important role here. Thus this socio-technical system aspect has been 
-added as candidate to the repository. (A formal description will be added.)
+See [SustainabilityAwareness.xml](descriptions/SustainabilityAwareness.xml). - We are not sure whether this strategic approach 
+really is a pattern. However, interaction between human stakeholders and the software plays an important role here. Thus this 
+socio-technical system aspect has been added as candidate to the repository. (A formal description will be added.)
 ### Sustainable Parts
 Alias for "Component Leaflets".
 ### Switch Implementation
 Here an alias for "Component Replaceability".
 ### Uninstall
-See Uninstall.xml.
+See [Uninstall.xml](descriptions/Uninstall.xml).
 ### Virtual Machine
 We are not sure whether this really is a pattern. A description might be added soon...
  
