@@ -1,0 +1,34 @@
+<?xml version="1.0" ?>
+<pattern patternID="3" collection="candidates" 
+		xsi:noNamespaceSchemaLocation="../plml/plml_bo-2.0.xsd" 
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<name>Uninstall</name>
+	<alias>Removability</alias>
+	<problem>
+		A software that is no longer needed takes memory and might have 
+		negative impact on the computer's performance.
+	</problem>
+	<solution>
+		Prove an uninstaller. Ideally, the software can be removed completely
+		from the computer (inclusively data, configuration files etc.). User 
+		support should be given explicitly. 
+	</solution>
+	<evidence>
+		<rationale>
+			After deinstallation of the software, released memory can be used
+			by other software or data. 
+		</rationale>
+	</evidence>
+	<literature>
+		Federal Agency og Environment (Umweltbundesamt), eds. (2017): 
+		Kriterienkatalog für nachhaltige Software, UFOPLAN FKZ-Nr. 
+		3715 37 601 0.
+ 	</literature>
+	<formalization/>
+	<management>
+		<author>Benno Schmidt</author>
+		<revision-number>0.1</revision-number>
+		<creation-date>14.07.2019</creation-date>
+		<last-modified>14.07.2019</last-modified>
+	</management>
+</pattern>
