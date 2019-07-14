@@ -1,0 +1,44 @@
+-- ----------------------------------------------------------------------------
+-- Sustainable Software Design Pattern Candidates 
+-- CafeOBJ encoding
+-- Geovisualization Lab, Bochum University of Applied Sciences
+
+in UmlConcepts .
+in SusConcepts .
+
+module OpenSource {
+  
+  -- Participants:
+  [ User < uml$Actor, BuildEnv, uml$Source, uml$Executable ]  
+  -- ToDo: uml$Actor vs. sus$Actor!
+  op user : -> User .   
+  op code : -> uml$Source .
+  op env : -> BuildEnv .
+  op softw : -> uml$Executable .
+
+  -- Collaborations:
+  pred _canHandle_ : User uml$Source
+  pred _canHandle_ : User BuildEnv
+  pred _builtFrom_with_ : uml$Executable uml$Source BuildEnv
+  pred _isOpen : uml$Source
+  pred _isAvailable : BuildEnv
+  pred _isAvailable : uml$Executable
+  ceq softw isAvailable = true if softw builtFrom code with env .
+  ceq softw builtFrom code with env = true if code isOpen and
+    env isAvailable and user canHandle code and user canHandle env .
+}
+
+open OpenSource .
+  -- Postcondition:
+  let goal = softw isAvailable .
+  red goal .
+  -- Preconditions:
+  eq code isOpen = true .
+  eq env isAvailable = true .
+  eq user canHandle code = true .
+  eq user canHandle env = true .
+  -- Then 'goal' reduces to 'true':
+  red goal .
+  -- Comments: Thus it is not sufficient if the user knows how to 
+  -- modify the source-code for his/her purposes.
+close .

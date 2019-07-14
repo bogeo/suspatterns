@@ -2,13 +2,21 @@
 Formal Descriptions of Sustainable Software Design Patterns
 
 ## Project description
-Use and operation of software has significant effects on environment and society. Despite this, design and implementation of green and sustainable software turn out to be difficult tasks. Practical guidelines and hints to assist software architects and programmers in their everyday-business are still rare. The question arises whether there are reusable solutions or solution components in the form of so-called "design patterns" leading to sustainable software implementations. 
+Use and operation of software has significant effects on environment and society. Despite this, design and implementation of 
+green and sustainable software turn out to be difficult tasks. Practical guidelines and hints to assist software architects and 
+programmers in their everyday-business are still rare. The question arises whether there are reusable solutions or solution 
+components in the form of so-called "design patterns" leading to sustainable software implementations. 
 
-This experimental GitHub repository contains a collection of sustainable software design pattern descriptions. We tried to describe the patterns formally. By now, algebraic specification techniques have been used. Of course, other approaches might be suitable and considered in the future.    
+This experimental GitHub repository contains a collection of sustainable software design pattern descriptions. We tried to 
+describe the patterns formally. By now, algebraic specification techniques have been used. Of course, other approaches might be 
+suitable and considered in the future.    
 
-From a technical point of view, formal pattern descriptions are embedded into an XML-based overarching pattern language here, namely the "pattern language modelling language (PLML). 
+From a technical point of view, formal pattern descriptions are embedded into an XML-based overarching pattern language here, 
+namely the "pattern language modelling language (PLML). 
 
-Notwithstanding, in order to support software developers, there is the demand to continue the search for more applicable design patterns (“pattern mining”) and to set up a design knowledge repository comprising of pattern collections. You would be very welcome to join our activities!
+Notwithstanding, in order to support software developers, there is the demand to continue the search for more applicable design 
+patterns (“pattern mining”) and to set up a design knowledge repository comprising of pattern collections. You would be very 
+welcome to join our activities!
 
 ## Useful links
 ### PLML
@@ -16,7 +24,9 @@ Notwithstanding, in order to support software developers, there is the demand to
 * [Planet (Pattern LAnguage NETwork)](https://patternlanguagenetwork.wordpress.com)
 
 ### CafeOBJ
-To run the pattern descriptions given in CafeOBJ syntax (recognizable by the language attribute inside the PLML-based descriptions: <formalization language="CafeOBJ" ...>), you have to install CafeOBJ on your computer, which is freely available [here](https://cafeobj.org/).
+To run the pattern descriptions given in CafeOBJ syntax (recognizable by the language attribute inside the PLML-based 
+descriptions: <formalization language="CafeOBJ" ...>), you have to install CafeOBJ on your computer, which is freely available 
+[here](https://cafeobj.org/).
 
 ## Pattern overview
 ### Backward compatibility
@@ -32,11 +42,12 @@ To be added soon...
 ### Don't Stream Twice
 See DontStreamTwice.xml.
 ### Expressive logging
-We are not sure whether this really is a pattern - maybe this is rather a guideline. A description has not been added to this repository.
+We are not sure whether this really is a pattern - maybe this is rather a guideline. A description has not been added to this 
+repository.
 ### General shortcut
 We are not sure whether this really is a pattern (a matter of granularity...). However, a description has not been added yet.
 ### Open source
-To be added soon...
+See OpenSource.xml.
 ### Regenerative operation
 Alias for "Compensate".
 ### Sleep mode
@@ -46,7 +57,8 @@ See Standy.xml.
 ### Suspend
 Alias for "Standby operation".
 ### Sustainability awareness
-We are not sure whether this really is a pattern (since socio-technical system elements interact here). However, a description will be added soon...
+We are not sure whether this really is a pattern (since socio-technical system elements interact here). However, a description 
+will be added soon...
 ### Virtual machine
 We are not sure whether this really is a pattern. A description might be added soon...
  

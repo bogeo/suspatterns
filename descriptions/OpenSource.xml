@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<pattern patternID="3" collection="candidates" 
+		xsi:noNamespaceSchemaLocation="../plml/plml_bo-2.0.xsd" 
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<name>Open Source</name>
+	<problem>
+		A software lacks functionality or can not be used anymore since the 
+		technical environment changed. 
+	</problem>
+	<solution>
+		Make available the source code to enable the user to extend or repair 
+		the software. This requires that the user has the technical skills 
+		and know-how to change the software as well as a suitable build 
+		environment.
+	</solution>
+	<formalization language="CafeOBJ" location="OpenSource.cafe"/>
+	<related-patterns>
+		<pattern-link type="related-to" 
+			patternID="99" collection="candidates" label="increase awareness"/>
+	</related-patterns>
+	<management>
+		<author>Benno Schmidt</author>
+		<revision-number>0.1</revision-number>
+		<creation-date>14.07.2019</creation-date>
+		<last-modified>14.07.2019</last-modified>
+	</management>
+</pattern>
