@@ -16,7 +16,7 @@ We tried to describe the patterns formally. By now, algebraic specification tech
 approaches might be suitable and considered in the future. From a technical point of view, formal pattern descriptions are 
 embedded into an XML-based overarching pattern language here, namely the "pattern language modelling language (PLML). - Please 
 note that this is all is work-in-progress and that your participation is appreciated.
- 
+  
 ## Useful links
 ### PLML
 * Fincher, S. (2006): [PLML: Pattern Language Markup Language](https://www.cs.kent.ac.uk/people/staff/saf/patterns/plml.html). Canterbury, UK: University of Kent. 
@@ -25,7 +25,7 @@ note that this is all is work-in-progress and that your participation is appreci
 ### CafeOBJ
 * [CafeOBJ Homepage](https://cafeobj.org/).
 
-## Pattern overview
+## Pattern candidate overview
 ### Backward Compatibility
 This is an important approach to avoid hardware obsolescence effects caused by the software. Unfortunately, detailed 
 software design patterns to achieve this goal are not given yet inside this experimental repository. But see 
@@ -71,7 +71,7 @@ Alias for "Standby Operation".
 ### Sustainability Awareness
 See [SustainabilityAwareness.xml](descriptions/SustainabilityAwareness.xml). - We are not sure whether this strategic approach 
 really is a pattern. However, interaction between human stakeholders and the software plays an important role here. Thus this 
-socio-technical system aspect has been added as candidate to the repository. (A formal description will be added.)
+socio-technical system view has been added as candidate to the repository. (A formal description will be added.)
 ### Sustainable Parts
 Alias for "Component Leaflets".
 ### Switch Implementation
