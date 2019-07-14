@@ -51,23 +51,26 @@ repository.
 We are not sure whether this really is a pattern (a matter of granularity...). However, a description has not been added yet.
 ### Open source
 See OpenSource.xml.
+### Psi increase
+Alias for "Sustainability Awareness".
 ### Regenerative operation
 Alias for "Compensate".
 ### Sleep mode
-Alias for "Standby operation".
+Alias for "Standby Operation".
 ### Standy operation
 See Standy.xml.
 ### Suspend
-Alias for "Standby operation".
+Alias for "Standby Operation".
 ### Sustainability awareness
-We are not sure whether this really is a pattern (since socio-technical system elements interact here). However, a description 
-will be added soon...
+See SustainabilityAwareness.xml. We are not sure whether this strategic approach really is a pattern. However, interaction 
+between human stakeholders and the software plays an important role here. Thus this socio-technical system aspect has been 
+added as candidate to the repository. (A formal description will be added.)
 ### Sustainable parts
-Alias for "Component leaflets".
+Alias for "Component Leaflets".
 ### Virtual machine
 We are not sure whether this really is a pattern. A description might be added soon...
  
-What are your ideas? (You're are welcome to participate in this project! Feel free to contact us.)
+What are your ideas? 
  
 ## More information
 Contact: Benno Schmidt, Geovisualization Lab, Bochum University of Applied Sciences, Lennershofstr. 140, D-44801 Bochum.
