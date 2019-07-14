@@ -3,21 +3,20 @@ Formal Descriptions of Sustainable Software Design Patterns
 
 ## Project description
 Use and operation of software has significant effects on environment and society. Despite this, design and implementation of 
-green and sustainable software turn out to be difficult tasks. Practical guidelines and hints to assist software architects and 
-programmers in their everyday-business are still rare. The question arises whether there are reusable solutions or solution 
-components in the form of so-called "design patterns" leading to sustainable software implementations. 
+green and sustainable software turn out to be difficult tasks. Practical guidelines and hints to assist software architects 
+and programmers in their everyday-business are still rare. Thus the question arises whether there are reusable solutions or 
+solution components in the form of so-called "design patterns" leading to sustainable software implementations. 
 
-This experimental GitHub repository contains a collection of sustainable software design pattern descriptions. We tried to 
-describe the patterns formally. By now, algebraic specification techniques have been used. Of course, other approaches might be 
-suitable and considered in the future.    
+This experimental GitHub repository contains a collection of sustainable software design pattern descriptions. Strictly 
+speaking, pattern candidates are given, since pattern characteristics are not yet evident. Notwithstanding, in order to support 
+software developers, there is the demand to continue the search for more applicable pattern candidates ("pattern mining") and to 
+set up a design knowledge repository comprising of pattern collections. You are very welcome to join our activities!
 
-From a technical point of view, formal pattern descriptions are embedded into an XML-based overarching pattern language here, 
-namely the "pattern language modelling language (PLML). 
-
-Notwithstanding, in order to support software developers, there is the demand to continue the search for more applicable design 
-patterns (“pattern mining”) and to set up a design knowledge repository comprising of pattern collections. You would be very 
-welcome to join our activities!
-
+We tried to describe the patterns formally. By now, algebraic specification techniques have been used. Of course, other 
+approaches might be suitable and considered in the future. From a technical point of view, formal pattern descriptions are 
+embedded into an XML-based overarching pattern language here, namely the "pattern language modelling language (PLML). - Please 
+note that this is all is work-in-progress and that your participation is appreciated.
+ 
 ## Useful links
 ### PLML
 * Fincher, S. (2006): [PLML: Pattern Language Markup Language](https://www.cs.kent.ac.uk/people/staff/saf/patterns/plml.html). Canterbury, UK: University of Kent. 
@@ -63,6 +62,8 @@ Alias for "Standby operation".
 ### Sustainability awareness
 We are not sure whether this really is a pattern (since socio-technical system elements interact here). However, a description 
 will be added soon...
+### Sustainable parts
+Alias for "Component leaflets".
 ### Virtual machine
 We are not sure whether this really is a pattern. A description might be added soon...
  
