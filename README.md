@@ -33,20 +33,23 @@ for some more comments about this. However, a first formal description will be a
 ### Cache Streamed Document
 Alias for "Don't Stream Twice".
 ### Compensate
-See Compensate.xml.
+This describes the basic approach to neutralize resource comsumption by suitable compensation measures. See Compensate.xml.
 ### Component Leaflets
-To be added soon...
+The idea is to provide "information leaflets" providing artifact information about sustainability-relevant issues such as
+energy comsumption, hardware requirements etc. See ComponentLeaflets.xml.
 ### Component Replaceability
-To be added soon...
+Principally, this reflects the "Design for Replaceability" idea. See ComponentReplaceability.xml.
 ### Don't Stream Twice
-See DontStreamTwice.xml.
+See DontStreamTwice.xml (avoid unnecessary data transfers resp. Internet traffic).
 ### Expressive Logging
 We are not sure whether this really is a pattern - maybe this is rather a guideline. A description has not been added to this 
 repository.
 ### General Shortcut
 We are not sure whether this really is a pattern (a matter of granularity...). However, a description has not been added yet.
 ### Open Source
-See OpenSource.xml.
+It is said, the open source philosophy and the practices behind open source development contribute to software with a higher
+degree of sustainabilty. Certainly this deserves further examination! However, the "repairability" aspect that is described
+here (see OpenSource.xml) gives just one facet of the idea behind open source.
 ### Psi Increase
 Alias for "Sustainability Awareness".
 ### Regenerative Operation
@@ -54,7 +57,7 @@ Alias for "Compensate".
 ### Removability
 Removability of software and data that is no longer needed should be supported explictly. See Uninstall.xml.
 ### Repair
-Here used as an alias for "Open Source".
+Here just used as an alias for "Open Source".
 ### Sleep Mode
 Alias for "Standby Operation".
 ### Standy Operation
@@ -87,7 +90,7 @@ In the CafeOBJ console, just change to the folder holding the pattern descriptio
     /projects/suspatterns/descriptions
     CafeOBJ> in Compensate.cafe
 
-    processing input : C:\projects\suspatterns\descriptions\Compensate.cafe
+    processing input : /projects/suspatterns/descriptions\Compensate.cafe
     -- reading in file  : susConcepts
     ...
  
