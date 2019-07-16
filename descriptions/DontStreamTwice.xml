@@ -13,11 +13,17 @@
 	<solution>
 		Store the streamed content in a cache on the user's local computer.
 	</solution>
-	<formalization language="CafeOBJ" location="DontStreamTwice.cafe"/>
+	<formalization language="CafeOBJ">
+		<participant identifier="d" type="Doc"/>
+		<participant identifier="loader" type="op stream : Doc -> Doc"/>	
+		<participant identifier="cleaner" type="op removeFromCache : Doc -> Doc"/>	
+		<participant identifier="checker" type="pred inCache : Doc"/>	
+  		<source-code location="DontStreamTwice.cafe"/>
+	</formalization>
 	<management>
 		<author>Benno Schmidt</author>
-		<revision-number>0.1</revision-number>
+		<revision-number>0.2</revision-number>
 		<creation-date>08.07.2019</creation-date>
-		<last-modified>08.07.2019</last-modified>
+		<last-modified>16.07.2019</last-modified>
 	</management>
 </pattern>

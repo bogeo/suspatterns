@@ -21,12 +21,18 @@
 		</rationale>
 	</evidence>
 	<literature>
-		<ref>
+		<ref id="1">
 			Busch, T. (2008): Open Source und Nachhaltigkeit. Open Source 
 			Jahrbuch 2008, TU Berlin.
 		</ref>
 	</literature>
-	<formalization language="CafeOBJ" location="OpenSource.cafe"/>
+	<formalization language="CafeOBJ">
+  		<participant identifier="user" type="User &lt; uml$Actor"/>
+		<participant identifier="env" type="BuildEnv"/>	
+		<participant identifier="code" type="uml$Source"/>	
+		<participant identifier="softw" type="uml$Executable"/>	
+  		<source-code location="OpenSource.cafe"/>
+	</formalization>
 	<related-patterns>
 		<pattern-link type="is-contained-by" 
 			patternID="99" collection="candidates" 
@@ -34,8 +40,8 @@
 	</related-patterns>
 	<management>
 		<author>Benno Schmidt</author>
-		<revision-number>0.2</revision-number>
+		<revision-number>0.3</revision-number>
 		<creation-date>14.07.2019</creation-date>
-		<last-modified>14.07.2019</last-modified>
+		<last-modified>16.07.2019</last-modified>
 	</management>
 </pattern>

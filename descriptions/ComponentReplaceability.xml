@@ -6,14 +6,16 @@
 	<alias>Switch Implementation</alias>
 	<problem>
 		A software system can not be used in sustainable manner or can not be
-		used at all where the responsible software component os known.
+		used at all, since a known software component does not work.
 	</problem>
 	<solution>
 		Replace the responsible component by a more suitable component. To do
 		this, the often the presence of suitable system-internal interfaces is
 		a pre-requisiste. 
 	</solution>
-	<formalization language="" location=""/>
+	<formalization language="">
+		<source-code location=""/>
+	</formalization>
 	<related-patterns>
 		<pattern-link type="related-to" patternID="5" collection="candidates" 
 			label="provide component leaflets"/>
@@ -22,8 +24,8 @@
 	</related-patterns>
 	<management>
 		<author>Benno Schmidt</author>
-		<revision-number>0.1</revision-number>
+		<revision-number>0.2</revision-number>
 		<creation-date>14.07.2019</creation-date>
-		<last-modified>14.07.2019</last-modified>
+		<last-modified>16.07.2019</last-modified>
 	</management>
 </pattern>

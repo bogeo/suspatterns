@@ -11,7 +11,7 @@
 	</problem>
 	<solution>
 		Reduce the share of consumed fossil energy by suitable compensation 
-		measures and assert these measures indeed will be implemented.
+		measures and assert these measures indeed will be implemented [1].
 		Compensation example: A potential way to offset your greenhouse gas 
 		emissions would be planting trees (since every tree captures CO2). 
 		Later on, one has to care for the trees planted for carbon neutrality 
@@ -20,21 +20,27 @@
 	</solution>
 	<diagram location="Compensate.jpg"/>
 	<literature>
-		<ref>
+		<ref id="1">
 			Schmidt, B. (2019): Towards a Formal Language to Describe 
 			Sustainable Software Patterns. Bochum: University of Applied 
 			Sciences. Submitted paper.
 		</ref>
  	</literature>
-	<formalization language="CafeOBJ" location="Compensate.cafe"/>
+ 	<formalization language="CafeOBJ">
+		<participant identifier="S" type="uml$Executable"/>
+		<participant identifier="Us" type="sus$Actor"/>
+		<participant identifier="recorder" type="op consume : uml$Executable -> sus$Energy"/>
+		<participant identifier="disposer" type="pred _dispose : sus$Carbon"/>
+		<source-code location="Compensate.cafe"/>
+	</formalization>
 	<related-patterns>
 		<pattern-link type="related-to" patternID="99" collection="candidates" 
 			label="raise sustainability awareness"/>
 	</related-patterns>
 	<management>
 		<author>Benno Schmidt</author>
-		<revision-number>0.3</revision-number>
+		<revision-number>0.4</revision-number>
 		<creation-date>01.07.2019</creation-date>
-		<last-modified>14.07.2019</last-modified>
+		<last-modified>16.07.2019</last-modified>
 	</management>
 </pattern>

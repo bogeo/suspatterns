@@ -4,15 +4,15 @@
 	<xsd:element name="pattern">
 		<xsd:complexType>
 			<xsd:sequence>
-				<xsd:element name="name" type="xsd:string" minOccurs="1" maxOccurs="1"/>
-				<xsd:element name="alias" type="xsd:string" minOccurs="0" maxOccurs="unbounded"/>
-				<xsd:element name="illustration" minOccurs="0" maxOccurs="1"/>
-				<xsd:element name="problem" type="xsd:string" minOccurs="1" maxOccurs="1"/>
-				<xsd:element name="context" type="xsd:string" minOccurs="0" maxOccurs="1"/>
-				<xsd:element name="forces" minOccurs="0" maxOccurs="1"/>
-				<xsd:element name="solution" minOccurs="1" maxOccurs="1"/>
-				<xsd:element name="synopsis" type="xsd:string" minOccurs="0" maxOccurs="1"/>
-				<xsd:element name="diagram" minOccurs="0" maxOccurs="1">
+				<xsd:element maxOccurs="1" minOccurs="1" name="name" type="xsd:string"/>
+				<xsd:element maxOccurs="unbounded" minOccurs="0" name="alias" type="xsd:string"/>
+				<xsd:element maxOccurs="1" minOccurs="0" name="illustration"/>
+				<xsd:element maxOccurs="1" minOccurs="1" name="problem" type="xsd:string"/>
+				<xsd:element maxOccurs="1" minOccurs="0" name="context" type="xsd:string"/>
+				<xsd:element maxOccurs="1" minOccurs="0" name="forces"/>
+				<xsd:element maxOccurs="1" minOccurs="1" name="solution"/>
+				<xsd:element maxOccurs="1" minOccurs="0" name="synopsis" type="xsd:string"/>
+				<xsd:element maxOccurs="1" minOccurs="0" name="diagram">
 					<xsd:complexType>
 						<xsd:simpleContent>
 							<xsd:extension base="xsd:string">
@@ -21,37 +21,67 @@
 						</xsd:simpleContent>
 					</xsd:complexType>
 				</xsd:element>
-				<xsd:element name="evidence" minOccurs="0" maxOccurs="1">
+				<xsd:element maxOccurs="1" minOccurs="0" name="evidence">
 					<xsd:complexType>
 						<xsd:sequence>
-							<xsd:element name="example" minOccurs="0" maxOccurs="unbounded"/>
-							<xsd:element name="rationale" minOccurs="0" maxOccurs="1"/>
+							<xsd:element maxOccurs="unbounded" minOccurs="0" name="example"/>
+							<xsd:element maxOccurs="1" minOccurs="0" name="rationale"/>
 						</xsd:sequence>
 					</xsd:complexType>
 				</xsd:element>
-				<xsd:element name="confidence" type="xsd:string" minOccurs="0" maxOccurs="1"/>
-				<xsd:element name="literature" minOccurs="0" maxOccurs="1">
+				<xsd:element maxOccurs="1" minOccurs="0" name="confidence" type="xsd:string"/>
+				<xsd:element maxOccurs="1" minOccurs="0" name="literature">
+					<xsd:annotation>
+						<xsd:documentation>Opposite to PLML 1.1, literature will be given separate ref elements here</xsd:documentation>
+					</xsd:annotation>
 					<xsd:complexType>
 						<xsd:sequence>
-							<xsd:element name="ref" minOccurs="0" maxOccurs="unbounded"/>
+							<xsd:element maxOccurs="unbounded" minOccurs="0" name="ref">
+								<xsd:complexType>
+									<xsd:simpleContent>
+										<xsd:extension base="xsd:string">
+											<xsd:attribute name="id" type="xsd:string" use="optional"/>
+										</xsd:extension>
+									</xsd:simpleContent>
+								</xsd:complexType>
+							</xsd:element>
 						</xsd:sequence>
 					</xsd:complexType>
 				</xsd:element>
-				<xsd:element name="implementation" maxOccurs="1" minOccurs="0"/>
-				<xsd:element name="formalization" minOccurs="0" maxOccurs="1">
-					<xsd:complexType>
-						<xsd:simpleContent>
-							<xsd:extension base="xsd:string">
-								<xsd:attribute name="language" type="xsd:string" use="required"/>
-								<xsd:attribute name="location" type="xsd:string" use="required"/>
-							</xsd:extension>
-						</xsd:simpleContent>
-					</xsd:complexType>
-				</xsd:element>
-				<xsd:element name="related-patterns" minOccurs="0" maxOccurs="1">
+				<xsd:element maxOccurs="1" minOccurs="0" name="implementation"/>
+				<xsd:element maxOccurs="1" minOccurs="0" name="formalization">
 					<xsd:complexType>
 						<xsd:sequence>
-							<xsd:element name="pattern-link" minOccurs="0" maxOccurs="unbounded">
+							<xsd:element maxOccurs="unbounded" minOccurs="0" name="participant">
+								<xsd:annotation>
+									<xsd:documentation>Optional listing of pattern participants</xsd:documentation>
+								</xsd:annotation>
+								<xsd:complexType>
+									<xsd:simpleContent>
+										<xsd:extension base="xsd:string">
+											<xsd:attribute name="identifier" type="xsd:string" use="required"/>
+											<xsd:attribute name="type" type="xsd:string" use="required"/>
+										</xsd:extension>
+									</xsd:simpleContent>
+								</xsd:complexType>
+							</xsd:element>
+							<xsd:element maxOccurs="unbounded" minOccurs="0" name="source-code">
+								<xsd:complexType>
+									<xsd:simpleContent>
+										<xsd:extension base="xsd:string">
+											<xsd:attribute name="location" type="xsd:string" use="required"/>
+										</xsd:extension>
+									</xsd:simpleContent>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+						<xsd:attribute name="language" type="xsd:string" use="required"/>
+					</xsd:complexType>
+				</xsd:element>
+				<xsd:element maxOccurs="1" minOccurs="0" name="related-patterns">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element maxOccurs="unbounded" minOccurs="0" name="pattern-link">
 								<xsd:annotation>
 									<xsd:documentation>Pre-defined PLML relation type</xsd:documentation>
 								</xsd:annotation>
@@ -72,11 +102,11 @@
 				<xsd:element maxOccurs="1" minOccurs="0" name="management">
 					<xsd:complexType>
 						<xsd:sequence>
-							<xsd:element name="author" type="xsd:string" minOccurs="0" maxOccurs="1"/>
-							<xsd:element name="revision-number" type="xsd:string" minOccurs="0" maxOccurs="1"/>
-							<xsd:element name="creation-date" type="xsd:string" minOccurs="0" maxOccurs="1"/>
-							<xsd:element name="last-modified" type="xsd:string" minOccurs="0" maxOccurs="1"/>
-							<xsd:element name="credits" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+							<xsd:element maxOccurs="1" minOccurs="0" name="author" type="xsd:string"/>
+							<xsd:element maxOccurs="1" minOccurs="0" name="revision-number" type="xsd:string"/>
+							<xsd:element maxOccurs="1" minOccurs="0" name="creation-date" type="xsd:string"/>
+							<xsd:element maxOccurs="1" minOccurs="0" name="last-modified" type="xsd:string"/>
+							<xsd:element maxOccurs="1" minOccurs="0" name="credits" type="xsd:string"/>
 						</xsd:sequence>
 					</xsd:complexType>
 				</xsd:element>

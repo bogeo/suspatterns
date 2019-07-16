@@ -12,23 +12,31 @@
 	<solution>
 		One approach would be to provide information about the used parts,
 		e.g. in the form of "information leaflets", and to assist the software 
-		developer when selection decisions about parts have to be made. 
+		developer when selection decisions about parts have to be made [1]. 
 		E.g. an information leaflet could provide information about the 
 		electric energy demand of a software component, hardware utilization  
-		etc.
+		etc. [2].
 	</solution>
 	<literature>
-	 	<ref>
+	 	<ref id="1">
 			Schmidt, B. (2016): Sustainability Knowledge about Software 
 			Parts in Software Engineering Processes. 4th Intern. Conf. on 
 			Sustainability (ICT4S).
 		</ref>
-		<ref>
+		<ref id="2">
 			Umweltbundesamt, eds.: Project REFOPLAN. Berlin: Federal 
 			Environment Agency, work in progress.
 		</ref>
  	</literature>
-	<formalization language="CafeOBJ" location="SustainableParts.cafe"/>
+	<formalization language="CafeOBJ">
+		<participant identifier="f" type="Func"/>
+		<participant identifier="part" type="uml$Component"/>
+		<participant identifier="p1" type="Part &lt; uml$Executable"/>
+		<participant identifier="p2" type="Part &lt; uml$Executable"/>
+		<participant identifier="" type=""/>
+		<participant identifier="" type=""/>
+		<source-code location="SustainableParts.cafe"/>
+	</formalization>
 	<related-patterns>
 		<pattern-link type="related-to" patternID="7" collection="candidates" 
 			label="support component replaceability"/>
@@ -38,8 +46,8 @@
 	</related-patterns>
 	<management>
 		<author>Benno Schmidt</author>
-		<revision-number>0.2</revision-number>
+		<revision-number>0.3</revision-number>
 		<creation-date>14.07.2019</creation-date>
-		<last-modified>14.07.2019</last-modified>
+		<last-modified>16.07.2019</last-modified>
 	</management>
 </pattern>

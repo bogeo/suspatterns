@@ -23,15 +23,21 @@
 			sustainability awareness (see related pattern).
 		</rationale>
 	</evidence>
-	<formalization language="CafeOBJ" location="Standby.cafe"/>
+	<formalization language="CafeOBJ">
+		<participant identifier="sys" type="uml$Executable"/>	
+  		<participant identifier="freezer" type="op freeze : uml$Executable -> uml$Executable"/>
+		<participant identifier="waker" type="wakeup : uml$Executable -> uml$Executable"/>	
+		<participant identifier="checker" type="exceedIdleTime : uml$Executable -> uml$Executable"/>	
+  		<source-code location="Standby.cafe"/>
+	</formalization>
 	<related-patterns>
 		<pattern-link type="related-to" patternID="99" collection="candidates" 
 			label="raise sustainability awareness"/>
 	</related-patterns>
 	<management>
 		<author>Benno Schmidt</author>
-		<revision-number>0.2</revision-number>
+		<revision-number>0.3</revision-number>
 		<creation-date>12.07.2019</creation-date>
-		<last-modified>14.07.2019</last-modified>
+		<last-modified>16.07.2019</last-modified>
 	</management>
 </pattern>

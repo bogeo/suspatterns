@@ -4,12 +4,15 @@
 		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<name>Backward Compatibility</name>
 	<problem>
-		A new software release does not run on the computer currently used. 
+		A new software or the update release of an already installed software does 
+		not run on the computer which is currently in use.
 	</problem>
 	<solution>
 		The software producer ensures that the new software release runs on the 
 		old machine. Since ICT permanently undergoes evelutionary developments,  
-		it will be hard to ensure this. 
+		it will be hard to ensure this. However, a recommendation could be as 
+		follows: The software producer guarantees that the current release runs
+		in a reference system that is not older than 5 years [2, 3].
 	</solution>
 	<evidence>
 		<rationale>
@@ -23,23 +26,28 @@
 		</rationale>
 	</evidence>
 	<literature>
-		<ref>
+		<ref id="1">
 			Kern, E.; Hilty, L.M.; Guldner, A.; Maksimov, Y.V.; Filler, A.; 
 			Gröger, J.; Naumann, S. (2018): Sustainable Software Products - 
 			Towards assessment criteria for resource and energy. Future 
 			Generation Computer Systems, Vol. 86, pp. 199-210.
 		</ref>
-		<ref>
+		<ref id="2">
 			Umweltbundesamt, eds. (2017): Kriterienkatalog für nachhaltige 
 			Software, Project UFOPLAN FKZ-Nr. 3715 37 601 0, Berlin: Federal 
 			Environment Agency.
 		</ref>
-		<ref>
+		<ref id="3">
 			Umweltbundesamt, eds.: Project REFOPLAN. Berlin: Federal 
 			Environment Agency, work in progress.
 		</ref>
  	</literature>
-	<formalization language="" location=""/>
+	<formalization language="CafeOBJ">
+		<participant identifier="producer" type="sus$Actor"/>
+		<participant identifier="app" type="uml$Executable"/>
+		<participant identifier="os" type="etc$OperationEnv"/>
+		<source-code location=""/>
+	</formalization>
 	<related-patterns>
 		<pattern-link type="related-to" patternID="7" collection="candidates" 
 			label="support component replaceability"/>
@@ -49,8 +57,8 @@
 	</related-patterns>
 	<management>
 		<author>Benno Schmidt</author>
-		<revision-number>0.2</revision-number>
+		<revision-number>0.3</revision-number>
 		<creation-date>14.07.2019</creation-date>
-		<last-modified>14.07.2019</last-modified>
+		<last-modified>16.07.2019</last-modified>
 	</management>
 </pattern>

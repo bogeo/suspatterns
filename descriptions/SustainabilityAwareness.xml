@@ -8,28 +8,35 @@
 		Some stakeholders (here: software users, software developers, 
 		product managers, software operators, etc.) do not yet care about 
 		sustainability issues. The reasons for this are manifold, e.g. 
-		missing sustainability knowledge.
+missing 
+		sustainability knowledge.
 	</problem>
 	<solution>
 		Sensitize the stakeholders for this topic by raising awareness 
-		about software sustainability issues. E.g., this can be done by making
+about
+		software sustainability issues [1]. E.g., this can be done by making
 		relevant software concepts transparent for the general public. 
 	</solution>
 	<evidence>
-		<rationale>
+	<rationale>
 		Since the interaction between human stakeholders and the software plays
-		an important role, this strategic approach has been registered as 
-		pattern candidate here.		
+		an important role, this strategic approach has been registered as pattern 
+		candidate here.		
 	</rationale>
 	</evidence>
 	<literature>
-		<ref>
+		<ref id="1">
 			Schmidt, B.; Wytzisk, A. (2019): Nachhaltigkeitsaspekte in der 
 			Softwareentwicklung. In: Englert, M.; Ternes, A. (eds.): 
 			Nachhaltiges Management. Berlin: Springer, pp. 651-668.
 		</ref>
  	</literature>
-	<formalization language="" location=""/>
+ 	<formalization language="CafeOBJ">
+		<participant identifier="app" type="uml$Executable"/>
+		<participant identifier="knowledge" type="op info : uml$Executable -> sus$LoS"/>
+		<participant identifier="Us" type="sus$Actor"/>
+		<source-code location=""/>
+	</formalization>
 	<related-patterns>
 		<pattern-link type="related-to" patternID="1" collection="candidates" 
 			label="compensate energy consumption"/>
@@ -44,8 +51,8 @@
 	</related-patterns>
 	<management>
 		<author>Benno Schmidt</author>
-		<revision-number>0.1</revision-number>
+		<revision-number>0.2</revision-number>
 		<creation-date>14.07.2019</creation-date>
-		<last-modified>14.07.2019</last-modified>
+		<last-modified>16.07.2019</last-modified>
 	</management>
 </pattern>
