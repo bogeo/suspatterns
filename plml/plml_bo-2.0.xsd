@@ -97,7 +97,7 @@
 								<xsd:complexType>
 									<xsd:simpleContent>
 										<xsd:extension base="xsd:string">
-											<xsd:attribute name="type" type="xsd:string" use="required"/>
+											<xsd:attribute name="type" type="relation" use="required"/>
 											<xsd:attribute name="patternID" type="xsd:integer" use="required"/>
 											<xsd:attribute name="collection" type="xsd:string" use="required"/>
 											<xsd:attribute name="label" type="xsd:string" use="required"/>
@@ -140,5 +140,38 @@
 	</xsd:simpleType>
 	<xsd:simpleType name="rating">
 		<xsd:union memberTypes="ratingAlexandrian ratingAltern"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="relationPLML">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="is-a"/>
+			<xsd:enumeration value="is-contained-by"/>
+			<xsd:enumeration value="contains"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="relationHenzen">
+		<xsd:annotation>
+			<xsd:documentation>Additional relations as defined by Henzen</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="equal-to"/>
+			<xsd:enumeration value="uses"/>
+			<xsd:enumeration value="used-combined"/>
+			<xsd:enumeration value="includes"/>
+			<xsd:enumeration value="needs"/>
+			<xsd:enumeration value="alternative-to"/>
+			<xsd:enumeration value="supplement-to"/>
+			<xsd:enumeration value="in-conflict-to"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="relationExt">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="related-to"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="relation">
+		<xsd:annotation>
+			<xsd:documentation>Pattern relation types</xsd:documentation>
+		</xsd:annotation>
+		<xsd:union memberTypes="relationPLML relationHenzen relationExt"/>
 	</xsd:simpleType>
 </xsd:schema>
