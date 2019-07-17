@@ -20,15 +20,15 @@
 	</solution>
 	<confidence>Idea</confidence>
 	<literature>
-	 	<ref id="1">
+	 	<bibliomixed id="1">
 			Schmidt, B. (2016): Sustainability Knowledge about Software 
 			Parts in Software Engineering Processes. 4th Intern. Conf. on 
 			Sustainability (ICT4S).
-		</ref>
-		<ref id="2">
+		</bibliomixed>
+		<bibliomixed id="2">
 			Umweltbundesamt, eds.: Project REFOPLAN. Berlin: Federal 
 			Environment Agency, work in progress.
-		</ref>
+		</bibliomixed>
  	</literature>
 	<formalization language="CafeOBJ">
 		<participant identifier="f" type="Func"/>

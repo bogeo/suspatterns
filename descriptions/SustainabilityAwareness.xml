@@ -24,11 +24,11 @@
 	</evidence>
 	<confidence>Idea</confidence>
 	<literature>
-		<ref id="1">
+		<bibliomixed id="1">
 			Schmidt, B.; Wytzisk, A. (2019): Nachhaltigkeitsaspekte in der 
 			Softwareentwicklung. In: Englert, M.; Ternes, A. (eds.): 
 			Nachhaltiges Management. Berlin: Springer, pp. 651-668.
-		</ref>
+		</bibliomixed>
 	</literature>
 	<formalization language="CafeOBJ">
 		<participant identifier="app" type="uml$Executable"/>

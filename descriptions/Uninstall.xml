@@ -22,15 +22,15 @@
 	</evidence>
 	<confidence>Idea</confidence>
 	<literature>
-		<ref id="1">
+		<bibliomixed id="1">
 			Umweltbundesamt, eds. (2017): Kriterienkatalog für nachhaltige 
 			Software, Project UFOPLAN FKZ-Nr. 3715 37 601 0, Berlin: Federal 
 			Environment Agency.
-		</ref>
-		<ref id="2">
+		</bibliomixed>
+		<bibliomixed id="2">
 			Umweltbundesamt, eds.: Project REFOPLAN. Berlin: Federal 
 			Environment Agency, work in progress.
-		</ref>
+		</bibliomixed>
  	</literature>
 	<formalization language="CafeOBJ">
   		<source-code location=""/>

@@ -41,11 +41,11 @@
 				</xsd:element>
 				<xsd:element maxOccurs="1" minOccurs="0" name="literature">
 					<xsd:annotation>
-						<xsd:documentation>Opposite to PLML 1.1, literature will be given separate ref elements here</xsd:documentation>
+						<xsd:documentation>As in Bienhaus's PLMLx, literature will be given separate child elements here</xsd:documentation>
 					</xsd:annotation>
 					<xsd:complexType>
 						<xsd:sequence>
-							<xsd:element maxOccurs="unbounded" minOccurs="0" name="ref">
+							<xsd:element maxOccurs="unbounded" minOccurs="0" name="bibliomixed">
 								<xsd:complexType>
 									<xsd:simpleContent>
 										<xsd:extension base="xsd:string">

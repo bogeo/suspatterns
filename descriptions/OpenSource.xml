@@ -23,10 +23,10 @@
 	</evidence>
 	<confidence>Idea</confidence>
 	<literature>
-		<ref id="1">
+		<bibliomixed id="1">
 			Busch, T. (2008): Open Source und Nachhaltigkeit. Open Source 
 			Jahrbuch 2008, TU Berlin.
-		</ref>
+		</bibliomixed>
 	</literature>
 	<formalization language="CafeOBJ">
   		<participant identifier="user" type="User &lt; uml$Actor"/>

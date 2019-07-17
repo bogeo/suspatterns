@@ -22,11 +22,11 @@
 	<diagram location="Compensate.jpg"/>
 	<confidence>reviewed</confidence>
 	<literature>
-		<ref id="1">
+		<bibliomixed id="1">
 			Schmidt, B. (2019): Towards a Formal Language to Describe 
 			Sustainable Software Patterns. Bochum: University of Applied 
 			Sciences. Submitted paper.
-		</ref>
+		</bibliomixed>
  	</literature>
  	<formalization language="CafeOBJ">
 		<participant identifier="S" type="uml$Executable"/>

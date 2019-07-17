@@ -28,21 +28,21 @@
 	</evidence>
 	<confidence>reviewed</confidence>
 	<literature>
-		<ref id="1">
+		<bibliomixed id="1">
 			Kern, E.; Hilty, L.M.; Guldner, A.; Maksimov, Y.V.; Filler, A.; 
 			Gröger, J.; Naumann, S. (2018): Sustainable Software Products - 
 			Towards assessment criteria for resource and energy. Future 
 			Generation Computer Systems, Vol. 86, pp. 199-210.
-		</ref>
-		<ref id="2">
+		</bibliomixed>
+		<bibliomixed id="2">
 			Umweltbundesamt, eds. (2017): Kriterienkatalog für nachhaltige 
 			Software, Project UFOPLAN FKZ-Nr. 3715 37 601 0, Berlin: Federal 
 			Environment Agency.
-		</ref>
-		<ref id="3">
+		</bibliomixed>
+		<bibliomixed id="3">
 			Umweltbundesamt, eds.: Project REFOPLAN. Berlin: Federal 
 			Environment Agency, work in progress.
-		</ref>
+		</bibliomixed>
  	</literature>
 	<formalization language="CafeOBJ">
 		<participant identifier="producer" type="sus$Actor"/>
