@@ -1,4 +1,5 @@
 <?xml version="1.0" ?>
+<?xml-stylesheet href="../plml/plml_bo-2.0.css"?>
 <pattern patternID="2" collection="candidates" 
 		xsi:noNamespaceSchemaLocation="../plml/plml_bo-2.0.xsd" 
 		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
@@ -13,6 +14,7 @@
 	<solution>
 		Store the streamed content in a cache on the user's local computer.
 	</solution>
+	<confidence>Idea</confidence>
 	<formalization language="CafeOBJ">
 		<participant identifier="d" type="Doc"/>
 		<participant identifier="loader" type="op stream : Doc -> Doc"/>	

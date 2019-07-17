@@ -1,53 +1,47 @@
 <?xml version="1.0" ?>
-<pattern patternID="99" collection="candidates" 
-		xsi:noNamespaceSchemaLocation="../plml/plml_bo-2.0.xsd" 
-		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<?xml-stylesheet href="../plml/plml_bo-2.0.css"?>
+
+<pattern patternID="99" collection="candidates" xsi:noNamespaceSchemaLocation="../plml/plml_bo-2.0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<name>Sustainability Awareness</name>
 	<alias>Psi increase</alias>
 	<problem>
 		Some stakeholders (here: software users, software developers, 
 		product managers, software operators, etc.) do not yet care about 
-		sustainability issues. The reasons for this are manifold, e.g. 
-missing 
+		sustainability issues. The reasons for this are manifold, e.g. missing 
 		sustainability knowledge.
 	</problem>
 	<solution>
-		Sensitize the stakeholders for this topic by raising awareness 
-about
+		Sensitize the stakeholders for this topic by raising awareness about
 		software sustainability issues [1]. E.g., this can be done by making
 		relevant software concepts transparent for the general public. 
 	</solution>
 	<evidence>
-	<rationale>
-		Since the interaction between human stakeholders and the software plays
-		an important role, this strategic approach has been registered as pattern 
-		candidate here.		
-	</rationale>
+		<rationale>
+			Since the interaction between human stakeholders and the software plays
+			an important role, this strategic approach has been registered as pattern 
+			candidate here.		
+		</rationale>
 	</evidence>
+	<confidence>Idea</confidence>
 	<literature>
 		<ref id="1">
 			Schmidt, B.; Wytzisk, A. (2019): Nachhaltigkeitsaspekte in der 
 			Softwareentwicklung. In: Englert, M.; Ternes, A. (eds.): 
 			Nachhaltiges Management. Berlin: Springer, pp. 651-668.
 		</ref>
- 	</literature>
- 	<formalization language="CafeOBJ">
+	</literature>
+	<formalization language="CafeOBJ">
 		<participant identifier="app" type="uml$Executable"/>
-		<participant identifier="knowledge" type="op info : uml$Executable -> sus$LoS"/>
+		<participant identifier="knowledge" type="op info : uml$Executable -&gt; sus$LoS"/>
 		<participant identifier="Us" type="sus$Actor"/>
 		<source-code location=""/>
 	</formalization>
 	<related-patterns>
-		<pattern-link type="related-to" patternID="1" collection="candidates" 
-			label="compensate energy consumption"/>
-		<pattern-link type="contains" patternID="3" collection="candidates" 
-			label="open source"/>
-		<pattern-link type="related-to" patternID="4" collection="candidates" 
-			label="support standby operation"/>
-		<pattern-link type="contains" patternID="5" collection="candidates" 
-			label="provide component leaflets"/>
-		<pattern-link type="contains" patternID="6" collection="candidates" 
-			label="assure backward compatibility"/>
+		<pattern-link type="related-to" patternID="1" collection="candidates" label="compensate energy consumption"/>
+		<pattern-link type="contains" patternID="3" collection="candidates" label="open source"/>
+		<pattern-link type="related-to" patternID="4" collection="candidates" label="support standby operation"/>
+		<pattern-link type="contains" patternID="5" collection="candidates" label="provide component leaflets"/>
+		<pattern-link type="contains" patternID="6" collection="candidates" label="assure backward compatibility"/>
 	</related-patterns>
 	<management>
 		<author>Benno Schmidt</author>

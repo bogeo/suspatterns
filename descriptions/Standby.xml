@@ -1,4 +1,5 @@
 <?xml version="1.0" ?>
+<?xml-stylesheet href="../plml/plml_bo-2.0.css"?>
 <pattern patternID="4" collection="candidates" 
 		xsi:noNamespaceSchemaLocation="../plml/plml_bo-2.0.xsd" 
 		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
@@ -23,6 +24,7 @@
 			sustainability awareness (see related pattern).
 		</rationale>
 	</evidence>
+	<confidence>Idea</confidence>
 	<formalization language="CafeOBJ">
 		<participant identifier="sys" type="uml$Executable"/>	
   		<participant identifier="freezer" type="op freeze : uml$Executable -> uml$Executable"/>

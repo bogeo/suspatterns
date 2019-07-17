@@ -29,7 +29,16 @@
 						</xsd:sequence>
 					</xsd:complexType>
 				</xsd:element>
-				<xsd:element maxOccurs="1" minOccurs="0" name="confidence" type="xsd:string"/>
+				<xsd:element maxOccurs="1" minOccurs="0" name="confidence">
+					<xsd:complexType>
+						<xsd:simpleContent>
+							<xsd:annotation>
+								<xsd:documentation>Special rating type as PLML extension</xsd:documentation>
+							</xsd:annotation>
+							<xsd:extension base="rating"/>
+						</xsd:simpleContent>
+					</xsd:complexType>
+				</xsd:element>
 				<xsd:element maxOccurs="1" minOccurs="0" name="literature">
 					<xsd:annotation>
 						<xsd:documentation>Opposite to PLML 1.1, literature will be given separate ref elements here</xsd:documentation>
@@ -115,4 +124,21 @@
 			<xsd:attribute name="collection" type="xsd:string"/>
 		</xsd:complexType>
 	</xsd:element>
+	<xsd:simpleType name="ratingAlexandrian">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="-"/>
+			<xsd:enumeration value="*"/>
+			<xsd:enumeration value="**"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="ratingAltern">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="Idea"/>
+			<xsd:enumeration value="reviewed"/>
+			<xsd:enumeration value="timeless"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="rating">
+		<xsd:union memberTypes="ratingAlexandrian ratingAltern"/>
+	</xsd:simpleType>
 </xsd:schema>
