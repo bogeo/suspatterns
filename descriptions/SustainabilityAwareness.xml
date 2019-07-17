@@ -1,19 +1,20 @@
 <?xml version="1.0" ?>
 <?xml-stylesheet href="../plml/plml_bo-2.0.css"?>
-
-<pattern patternID="99" collection="candidates" xsi:noNamespaceSchemaLocation="../plml/plml_bo-2.0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<pattern patternID="99" collection="candidates" 
+		xsi:noNamespaceSchemaLocation="../plml/plml_bo-2.0.xsd"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<name>Sustainability Awareness</name>
 	<alias>Psi increase</alias>
 	<problem>
-		Some stakeholders (here: software users, software developers, 
-		product managers, software operators, etc.) do not yet care about 
-		sustainability issues. The reasons for this are manifold, e.g. missing 
-		sustainability knowledge.
+		Some stakeholders (here: software users, software developers, product 
+		managers, software operators, etc.) do not yet care about sustainability 
+		issues. The reasons for this are manifold, e.g. missing sustainability 
+		knowledge.
 	</problem>
 	<solution>
-		Sensitize the stakeholders for this topic by raising awareness about
-		software sustainability issues [1]. E.g., this can be done by making
-		relevant software concepts transparent for the general public. 
+		Sensitize the stakeholders for this topic by raising awareness about software
+		sustainability issues [1]. E.g., this can be done by making relevant software 
+		concepts transparent for the general public. 
 	</solution>
 	<evidence>
 		<rationale>
@@ -26,8 +27,8 @@
 	<literature>
 		<bibliomixed id="1">
 			Schmidt, B.; Wytzisk, A. (2019): Nachhaltigkeitsaspekte in der 
-			Softwareentwicklung. In: Englert, M.; Ternes, A. (eds.): 
-			Nachhaltiges Management. Berlin: Springer, pp. 651-668.
+			Softwareentwicklung. In: Englert, M.; Ternes, A. (eds.): Nachhaltiges 
+			Management. Berlin: Springer, pp. 651-668.
 		</bibliomixed>
 	</literature>
 	<formalization language="CafeOBJ">
