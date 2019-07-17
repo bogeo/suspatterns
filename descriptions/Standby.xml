@@ -33,7 +33,7 @@
   		<source-code location="Standby.cafe"/>
 	</formalization>
 	<related-patterns>
-		<pattern-link type="related-to" patternID="99" collection="candidates" 
+		<pattern-link type="is-related-to" patternID="99" collection="candidates" 
 			label="raise sustainability awareness"/>
 	</related-patterns>
 	<management>

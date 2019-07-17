@@ -40,7 +40,7 @@
 		<source-code location="SustainableParts.cafe"/>
 	</formalization>
 	<related-patterns>
-		<pattern-link type="related-to" patternID="7" collection="candidates" 
+		<pattern-link type="is-related-to" patternID="7" collection="candidates" 
 			label="support component replaceability"/>
 		<pattern-link type="is-contained-by" 
 			patternID="99" collection="candidates" 

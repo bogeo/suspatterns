@@ -153,20 +153,18 @@
 			<xsd:documentation>Additional relations as defined by Henzen</xsd:documentation>
 		</xsd:annotation>
 		<xsd:restriction base="xsd:string">
-			<xsd:enumeration value="equal-to"/>
-			<xsd:enumeration value="uses"/>
-			<xsd:enumeration value="used-combined"/>
-			<xsd:enumeration value="includes"/>
-			<xsd:enumeration value="needs"/>
-			<xsd:enumeration value="alternative-to"/>
-			<xsd:enumeration value="supplement-to"/>
-			<xsd:enumeration value="in-conflict-to"/>
+			<xsd:enumeration value="is-dependent-on"/>
+			<xsd:enumeration value="is-alternative-to"/>
+			<xsd:enumeration value="is-specialization-of"/>
+			<xsd:enumeration value="is-related-to"/>
+			<xsd:enumeration value="is-incompatible-to"/>
 		</xsd:restriction>
 	</xsd:simpleType>
 	<xsd:simpleType name="relationExt">
 		<xsd:restriction base="xsd:string">
-			<xsd:enumeration value="related-to"/>
-			<xsd:enumeration value="has-a"/>
+			<xsd:enumeration value="is-equal-to"/>
+			<xsd:enumeration value="uses"/>
+			<xsd:enumeration value="is-supplement-to"/>
 		</xsd:restriction>
 	</xsd:simpleType>
 	<xsd:simpleType name="relation">
