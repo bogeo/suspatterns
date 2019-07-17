@@ -166,6 +166,7 @@
 	<xsd:simpleType name="relationExt">
 		<xsd:restriction base="xsd:string">
 			<xsd:enumeration value="related-to"/>
+			<xsd:enumeration value="has-a"/>
 		</xsd:restriction>
 	</xsd:simpleType>
 	<xsd:simpleType name="relation">
