@@ -3,7 +3,7 @@
 -- CafeOBJ encoding
 -- Geovisualization Lab, Bochum University of Applied Sciences
 
-in susConcepts .
+in SusConcepts .
 in UmlConcepts .
 
 module Compensate {
