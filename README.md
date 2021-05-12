@@ -31,6 +31,12 @@ This is an important approach to avoid hardware obsolescence effects caused by t
 software design patterns to achieve this goal are not given yet inside this experimental repository. But see 
 [BackwardCompatibility.xml](descriptions/BackwardCompatibility.xml) for some more comments about this. However, a first formal 
 description will be added soon to this experimental repository...
+### (Bloatware)
+Often software includes unnecessary resource-wasting additional functions that do not improve the purpose of the application. 
+(This includes, for example, unwanted advertising or unwanted logging of information.) Since this is a "anti-pattern",
+we did not document it here. 
+### Buffered Dataflow
+See [BufferedDataflow.xml](descriptions/BufferedDataflow.xml).
 ### Cache Streamed Document
 Alias for "Don't Stream Twice".
 ### (Circuit Breaker)
@@ -47,17 +53,34 @@ Principally, this reflects the "Design for Replaceability" idea.
 See [ComponentReplaceability.xml](descriptions/ComponentReplaceability.xml).
 ### Don't Stream Twice
 See [DontStreamTwice.xml](descriptions/DontStreamTwice.xml) (avoid unnecessary data transfers resp. Internet traffic).
+### Decoupled Components
+Here an alias for "Outsource General Computations". 
+See [OutsourceGeneralComputations.xml](descriptions/OutsourceGeneralComputations.xml).
+### Dynamic Resources
+Here an alias for "Switch Off Unneeded Processes". 
+See [SwitchOffUnneededProcesses.xml](descriptions/SwitchOffUnneededProcesses.xml).
+### Emulator
+See [Emulator.xml](descriptions/Emulator.xml).
 ### Expressive Logging
 We are not sure whether this really is a pattern - maybe this is rather a guideline. A description has not been added to this 
 repository.
 ### General Shortcut
 We are not sure whether this really is a pattern (a matter of granularity...). However, a description has not been added yet.
+### Minimize Dataflow
+Here an alias for "Buffered Dataflow". 
+See [BufferedDataflow.xml](descriptions/BufferedDataflow.xml).
 ### Open Source
 It is said, the open source philosophy and the practices behind open source development contribute to software with a higher
 degree of sustainabilty. Certainly this deserves further examination! However, the "repairability" aspect that is described
 here (see [OpenSource.xml](descriptions/OpenSource.xml)) gives just one facet of the idea behind open source.
+### Outsource General Computations
+See [OutsourceGeneralComputations.xml](descriptions/OutsourceGeneralComputations.xml).
+### Postpone Into Green Phase
+See [PostponeIntoGreenPhase.xml](descriptions/PostponeIntoGreenPhase.xml).
 ### Psi Increase
 Alias for "Sustainability Awareness".
+### Reactive Response
+See [ReactiveResponse.xml](descriptions/ReactiveResponse.xml).
 ### Regenerative Operation
 Alias for "Compensate".
 ### Removability
@@ -65,6 +88,9 @@ Removability of software and data that is no longer needed should be supported e
 See [Uninstall.xml](descriptions/Uninstall.xml).
 ### Repair
 Here just used as an alias for "Open Source".
+### Scaleability
+Here an alias for "Switch Off Unneeded Processes". 
+See [SwitchOffUnneededProcesses.xml](descriptions/SwitchOffUnneededProcesses.xml).
 ### Sleep Mode
 Alias for "Standby Operation".
 ### Standy Operation
@@ -79,10 +105,12 @@ socio-technical system view has been added as candidate to the repository. (A fo
 Alias for "Component Leaflets".
 ### Switch Implementation
 Here an alias for "Component Replaceability".
+### Switch Off Unneeded Processes
+See [SwitchOffUnneededProcesses.xml](descriptions/SwitchOffUnneededProcesses.xml).
 ### Uninstall
 See [Uninstall.xml](descriptions/Uninstall.xml).
 ### Virtual Machine
-We are not sure whether this really is a pattern. A description might be added soon...
+Alias for "Emulator". See [Emulator.xml](descriptions/Emulator.xml).
  
 What are your ideas?
 
@@ -111,4 +139,4 @@ In the CafeOBJ console, just change to the folder holding the pattern descriptio
 The goal to get a more sustainable system is achieved here, since the goal term is reduced to `true`. 
  
 ## More information
-Contact: Benno Schmidt, Geovisualization Lab, Bochum University of Applied Sciences, Lennershofstr. 140, D-44801 Bochum.
+Contact: Benno Schmidt, Geovisualization Lab, Bochum University of Applied Sciences, Am Hochschulcampus 1, D-44801 Bochum.

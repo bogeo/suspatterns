@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet href="../plml/plml_bo-2.1.css"?>
+<pattern patternID="15" collection="candidates" 
+		xsi:noNamespaceSchemaLocation="../plml/plml_bo-2.0.xsd"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<name>Reactive Response</name>
+	<alias></alias>
+	<problem>
+		TODO This pattern has not been documented yet. See given literature [1]
+		for details. 
+	</problem>
+	<solution>
+	</solution>
+	<evidence>
+		<rationale>
+		</rationale>
+	</evidence>
+	<confidence>Idea</confidence>
+	<literature>
+		<bibliomixed id="1">
+			Geiger et al. (2020): Ressourceneffiziente Programmierung. Berlin: Bitkom, S. 13. 
+		</bibliomixed>
+	</literature>
+	
+	<related-patterns>
+	</related-patterns>
+	<management>
+		<author>Benno Schmidt</author>
+		<revision-number>0.1</revision-number>
+		<creation-date>12.05.2021</creation-date>
+		<last-modified>12.05.2021</last-modified>
+	</management>
+</pattern>

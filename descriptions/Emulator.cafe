@@ -1,0 +1,40 @@
+-- ----------------------------------------------------------------------------
+-- Sustainable Software Design Pattern Candidates 
+-- CafeOBJ encoding
+-- Geovisualization Lab, Bochum University of Applied Sciences
+
+in susConcepts .
+in UmlConcepts .
+
+module CompatibilityProblem {
+  [ App < uml$Executable, uml$ExecEnv ]
+  pred _runs under_ : App uml$ExecEnv 
+  pred _updated to_ : uml$ExecEnv uml$ExecEnv
+}
+
+module CompatibilitySolution {  
+  pr(CompatibilityProblem)
+  pred _emulates_ : App uml$ExecEnv 
+  vars app vm : App 
+  vars e e' : uml$ExecEnv 
+  pred _runs in|(_,_) _ : App App uml$ExecEnv uml$ExecEnv .
+  pred _runs in_ : App App 
+  eq app runs in|(vm, e) e' =  
+    (vm emulates e) and  (app runs in vm) and (vm runs under e') .  
+}
+open CompatibilitySolution .
+  op APP : -> App .
+  ops E E'  : -> uml$ExecEnv .
+  eq E updated to E' = true .
+
+  -- Provide solution: 
+  op VM : -> App .
+  eq VM emulates E = true .
+  eq VM runs under E' = true .
+  eq APP runs in VM = true .  
+
+  red APP runs in|(VM, E) E' .
+close 
+
+eof
+

@@ -1,0 +1,35 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet href="../plml/plml_bo-2.0.css"?>
+<pattern patternID="12" collection="candidates" 
+		xsi:noNamespaceSchemaLocation="../plml/plml_bo-2.0.xsd"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<name>Buffered Dataflow</name>
+	<alias>Minimize Dataflow</alias>
+	<problem>
+		Factors such as CPU time and memory consumption influence the energy consumption 
+		at software runtime. Moving data (e.g. from memory to hard drive or via the network) is 
+		an activity that might consume a lot of energy. (See [1].) 
+	</problem>
+	<solution>
+		Often it is a good idea, to work with caches or buffers to keep the the data flow generally low.
+	</solution>
+	<evidence>
+		<rationale>
+		</rationale>
+	</evidence>
+	<confidence>Idea</confidence>
+	<literature>
+		<bibliomixed id="1">
+			Geiger et al. (2020): Ressourceneffiziente Programmierung. Berlin: Bitkom, S. 9. 
+		</bibliomixed>
+	</literature>
+	<related-patterns>
+		<pattern-link type="is-related-to" patternID="2" collection="candidates" label="don't stream twice"/>
+	</related-patterns>
+	<management>
+		<author>Benno Schmidt</author>
+		<revision-number>0.1</revision-number>
+		<creation-date>12.05.2021</creation-date>
+		<last-modified>12.05.2021</last-modified>
+	</management>
+</pattern>

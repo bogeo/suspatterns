@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet href="../plml/plml_bo-2.0.css"?>
+<pattern patternID="11" collection="candidates" 
+		xsi:noNamespaceSchemaLocation="../plml/plml_bo-2.0.xsd"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<name>Switch Off Unneeded Processes</name>
+	<alias>Dynamic Resources</alias>
+	<alias>Scaleability</alias>
+	<problem>
+		The energy consumption of a developed software solution is high due to running 
+		process instances that unnecessarily are active with repect to the current requirements. 
+		(See [1].)
+	</problem>
+	<solution>
+		Adapt the number of active process instances dynamically with respect to the 
+		actual requirements at runtime by adding or removing further instances. Generally,
+		such a mechanism has to be considered at an early stage when designing the overall 
+		system's architecture.
+	</solution>
+	<evidence>
+		<rationale>
+		</rationale>
+	</evidence>
+	<confidence>reviewed</confidence>
+	<literature>
+		<bibliomixed id="1">
+			Geiger et al. (2020): Ressourceneffiziente Programmierung. Berlin: Bitkom, S. 12. 
+		</bibliomixed>
+	</literature>
+	<related-patterns>
+	</related-patterns>
+	<management>
+		<author>Benno Schmidt</author>
+		<revision-number>0.1</revision-number>
+		<creation-date>12.05.2021</creation-date>
+		<last-modified>12.05.2021</last-modified>
+	</management>
+</pattern>

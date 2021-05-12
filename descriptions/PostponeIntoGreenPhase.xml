@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet href="../plml/plml_bo-2.1.css"?>
+<pattern patternID="10" collection="candidates" 
+		xsi:noNamespaceSchemaLocation="../plml/plml_bo-2.0.xsd"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<name>Postpone Into Green Phase</name>
+	<alias></alias>
+	<problem>
+		It is a general aim is to enable users to use energy in a way that conserves 
+		resources. However, the application used does not know how the energy it 
+		consumes has been generated (e.g. regenerative or not). 
+(See [1].)
+	</problem>
+	<solution>
+		Offer the software application the possibility to carry of not urgently needed 
+		operations when green electricity is available. (E.g., postpone computationally 
+		intensive computations, where possible.) For this purpose, a component must 
+		be provided which provides information about the way in which the currently 
+		available energy has been generated.
+	</solution>
+	<evidence>
+		<rationale>
+		</rationale>
+	</evidence>
+	<confidence>Idea</confidence>
+	<literature>
+		<bibliomixed id="1">
+			Geiger et al. (2020): Ressourceneffiziente Programmierung. Berlin: Bitkom, S. 9. 
+		</bibliomixed>
+	</literature>
+	<related-patterns>
+		<pattern-link type="is-related-to" patternID="1" collection="candidates" label="compensate energy consumption"/>
+		<pattern-link type="is-related-to" patternID="11" collection="candidates" label="switch off unneeded features"/>
+	</related-patterns>
+	<management>
+		<author>Benno Schmidt</author>
+		<revision-number>0.1</revision-number>
+		<creation-date>12.05.2021</creation-date>
+		<last-modified>12.05.2021</last-modified>
+	</management>
+</pattern>

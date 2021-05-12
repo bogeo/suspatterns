@@ -22,6 +22,9 @@
 		<participant identifier="checker" type="pred inCache : Doc"/>	
   		<source-code location="DontStreamTwice.cafe"/>
 	</formalization>
+	<related-patterns>
+		<pattern-link type="is-related-to" patternID="12" collection="candidates" label="buffered dataflow"/>
+	</related-patterns>
 	<management>
 		<author>Benno Schmidt</author>
 		<revision-number>0.2</revision-number>

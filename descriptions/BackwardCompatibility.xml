@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<?xml-stylesheet href="../plml/plml_bo-2.0.css"?>
+<?xml-stylesheet href="../plml/plml_bo-2.1.css"?>
 <pattern patternID="6" collection="candidates" 
 		xsi:noNamespaceSchemaLocation="../plml/plml_bo-2.0.xsd" 
 		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
@@ -30,18 +30,25 @@
 	<literature>
 		<bibliomixed id="1">
 			Kern, E.; Hilty, L.M.; Guldner, A.; Maksimov, Y.V.; Filler, A.; 
-			Gröger, J.; Naumann, S. (2018): Sustainable Software Products - 
-			Towards assessment criteria for resource and energy. Future 
-			Generation Computer Systems, Vol. 86, pp. 199-210.
+Gröger, J.; 
+			Naumann, S. (2018): Sustainable Software Products - 
+Towards assessment 
+			criteria for resource and energy. Future 
+Generation Computer Systems, Vol. 86, 
+			pp. 199-210.
 		</bibliomixed>
 		<bibliomixed id="2">
 			Umweltbundesamt, eds. (2017): Kriterienkatalog für nachhaltige 
-			Software, Project UFOPLAN FKZ-Nr. 3715 37 601 0, Berlin: Federal 
-			Environment Agency.
+ Software, 
+			Project UFOPLAN FKZ-Nr. 3715 37 601 0, Berlin: Federal 
+Environment Agency.
 		</bibliomixed>
 		<bibliomixed id="3">
 			Umweltbundesamt, eds.: Project REFOPLAN. Berlin: Federal 
-			Environment Agency, work in progress.
+Environment Agency.
+		</bibliomixed>
+		<bibliomixed id="4">
+			Geiger et al. (2020): Ressourceneffiziente Programmierung. Berlin: Bitkom, S. 19. 
 		</bibliomixed>
  	</literature>
 	<formalization language="CafeOBJ">

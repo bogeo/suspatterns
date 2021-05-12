@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet href="../plml/plml_bo-2.0.css"?>
+<pattern patternID="13" collection="candidates" 
+		xsi:noNamespaceSchemaLocation="../plml/plml_bo-2.0.xsd"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<name>Outsource General Computations</name>
+	<alias>Decoupled Components</alias>
+	<problem>
+		A recurring, computationally intensive task (for example the evening analysis of all sales 
+		results of a supermarket chain) increases the hardware requirements for the overall system 
+		in which it is performed. If the system is otherwise not very computationally intensive, there 
+		will be an avoidable energy loss since the hardware is geared towards this edge-case. [1]
+	</problem>
+	<solution>
+		Release such a task into its own (e.g. containerized) environment that will be available 
+		at execution time of the task only. This can save a large amount of energy. The actual system 
+		and thus the hardware to be operated continuously becomes smaller and more efficient.
+	</solution>
+	<evidence>
+		<rationale>
+		</rationale>
+	</evidence>
+	<confidence>reviewed</confidence>
+	<literature>
+		<bibliomixed id="1">
+			Geiger et al. (2020): Ressourceneffiziente Programmierung. Berlin: Bitkom, S. 12. 
+		</bibliomixed>
+	</literature>
+	<related-patterns>
+	</related-patterns>
+	<management>
+		<author>Benno Schmidt</author>
+		<revision-number>0.1</revision-number>
+		<creation-date>12.05.2021</creation-date>
+		<last-modified>12.05.2021</last-modified>
+	</management>
+</pattern>

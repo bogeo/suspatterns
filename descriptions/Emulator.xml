@@ -1,0 +1,59 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet href="../plml/plml_bo-2.0.css"?>
+<pattern patternID="14" collection="candidates" 
+		xsi:noNamespaceSchemaLocation="../plml/plml_bo-2.1.xsd"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<name>Emulator</name>
+	<alias>Virtual Machine</alias>
+	<problem>
+		An existing software application can be run inside a given execution
+		environment. Now the execution environment is replaced by a new one
+		(e.g. the update of an operation system). However, the application cannot 
+		be run in the new environment. Thus the computer system (i.e., the
+		hardware components) threatens to become. (See [1].) 
+ 	</problem>
+	<solution>
+		Provide a further application which can be run inside the new execution 
+		environment and which emulates the old environment. Assumptions for
+		the applicability of the pattern: 1. It must be ensured that the performance 
+		of the existing application using the new environment and the existing 
+		hardware will not be significantly lower than the performance of the existing 
+		system. 2. The user must also be willing to continue using the hardware in 
+		the new configuration. (This also means that psychological obsolescence 
+		does not occur.) 3. The emulator must actually be made available by the 
+		software manufacturer.
+	</solution>
+	<diagram location="Emulator.png"/>
+	<evidence>
+		<rationale>
+			The pattern is suggested because it represents a simple measure to 
+			prevent hardware obsolescence in many siutations.
+		</rationale>
+	</evidence>
+	<confidence>Idea</confidence>
+	<literature>
+		<bibliomixed id="1">
+			Schmidt, B. (2021): Ein Ansatz zur strukturierten Beschreibung von 
+			Entwurfsmustern für nachhaltige Softwareprodukte. Arbeitspapier,
+			Labor für Geovisualisierung der Hochschule Bochum.
+		</bibliomixed>
+	</literature>
+	<formalization language="CafeOBJ">
+		<participant identifier="app" title="application" type="uml$Executable"/>
+		<participant identifier="e" title="old execution environment" type="uml$ExecEnv"/>
+		<participant identifier="e'" title="new execution environment" type="uml$ExecEnv"/>
+		<participant identifier="em" title="emulator" type="uml$Executable"/>
+		<participant identifier="hw" title="hardware" type="uml$Node"/>
+		<participant identifier="u" title="user" type="sus$Actor"/>
+		<participant identifier="v" title="vendor" type="sus$Actor"/>
+		<source-code location="Emulator.cafe"/>
+	</formalization>
+	<related-patterns>
+	</related-patterns>
+	<management>
+		<author>Benno Schmidt</author>
+		<revision-number>0.1</revision-number>
+		<creation-date>12.05.2021</creation-date>
+		<last-modified>12.05.2021</last-modified>
+	</management>
+</pattern>

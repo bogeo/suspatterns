@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <?xml-stylesheet href="../plml/plml_bo-2.0.css"?>
-<pattern patternID="99" collection="candidates" 
+<pattern patternID="9" collection="candidates" 
 		xsi:noNamespaceSchemaLocation="../plml/plml_bo-2.0.xsd"
 		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<name>Sustainability Awareness</name>

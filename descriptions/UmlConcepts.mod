@@ -13,6 +13,12 @@ module UmlConcepts {
   -- Source: A file containing the text of a program that can be compiled 
   --   into executable code.
   
+  [ uml$ExecEnv < uml$Node ]
+  -- Node: Run-time physical object that represents a computational resource,
+  --   which generally has at least a memory and often processing capability.
+  -- Execution environment: Deployment node that represents a particular
+  --   kind of execution platform, e.g. an operating system, a DBMS, and so on.
+  
   [ uml$Component ]
   -- Component: A modular part of a system design that hides its implementation
   --   behind a set of external interfaces. within a system, components

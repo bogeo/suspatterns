@@ -24,8 +24,9 @@
 	<literature>
 		<bibliomixed id="1">
 			Schmidt, B. (2019): Towards a Formal Language to Describe 
-			Sustainable Software Patterns. Bochum: University of Applied 
-			Sciences. Submitted paper.
+			Sustainable Software Patterns. Adjunct 
+Proceedings of the 33rd
+			EnviroInfo Conference, pp. 128-135.
 		</bibliomixed>
  	</literature>
  	<formalization language="CafeOBJ">
