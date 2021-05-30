@@ -1,0 +1,48 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet href="../plml/plml_bo-2.0.css"?>
+<pattern patternID="16" collection="candidates" 
+		xsi:noNamespaceSchemaLocation="../plml/plml_bo-2.1.xsd"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<name>Memoization</name>
+	<alias></alias>
+	<problem>
+		TODO 
+ 	</problem>
+	<solution>
+		After a function's value for a parameter or for set of parameters is 
+		computed by a program, the function result is stored in a lookup table that 
+		is indexed by the values of those parameters; the next time the function is 
+		called, this lookup table will be consulted to determine whether the result 
+		for that combination of parameter values is already available. If so, the 
+		stored result is simply returned. Otherwise, the function will be evaluated 
+		and another entry will be added to the lookup table for reuse.
+	</solution>
+	<diagram location="/>
+	<evidence>
+		<rationale>
+			The described mechanism can reduce the running time of certain functions.
+			And it might lead to a reduction in a program's memory footprint. This
+			pattern is ultimately a pure efficiency pattern (providing a weak degree 
+			of sustainability only). However, since it is directly related to energy 
+			and resource conservation, it has been included in this candidate 
+			collection.
+		</rationale>
+	</evidence>
+	<confidence>Idea</confidence>
+	<literature>
+		<bibliomixed id="1">
+			Bentley, J.L (1985): Writing Efficient Programs. Prentice-Hall.
+		</bibliomixed>
+	</literature>
+	<related-patterns>
+		<pattern-link type="" 
+			patternID="" collection="candidates" 
+			label="lazy evaluation"/>
+	</related-patterns>
+	<management>
+		<author>Benno Schmidt</author>
+		<revision-number>0.1</revision-number>
+		<creation-date>29.05.2021</creation-date>
+		<last-modified>29.05.2021</last-modified>
+	</management>
+</pattern>
