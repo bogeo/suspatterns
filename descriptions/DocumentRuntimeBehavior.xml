@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet href="../plml/plml_bo-2.0.css"?>
+<pattern patternID="17" collection="candidates" 
+		xsi:noNamespaceSchemaLocation="../plml/plml_bo-2.1.xsd"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<name>Document Run-time Behavior</name>
+	<alias></alias>
+	<problem>
+		For example, if a programmer uses an inefficient O(n) method and calls it n 
+		times, for huge datasets this will result in a resource-intensive O(n^2) 
+		behavior. (Instead, he/she would have better implemented his/her own 
+		O(n log n) algorithm, if he/she had known about this.) This inefficiency 
+		becomes critical if the implemented function is called "a million times" 
+		(e.g. in a Web application) or if it implies that the operator of the 
+		software has to purchase a more powerful computer (which often does not 
+		really solve the problem).
+ 	</problem>
+	<solution>
+		Simply give efficiency information in the API documentation! Note: This
+		simple pattern might contradict the idea of ​​an interface to describe a 
+		functionality independently of the underlying implementation.
+	</solution>
+	<diagram location="/>
+	<evidence>
+		<rationale>
+			TODO
+		</rationale>
+	</evidence>
+	<confidence>Idea</confidence>
+	<literature>
+	</literature>
+	<related-patterns>
+		<pattern-link type="" 
+			patternID="5" collection="candidates" 
+			label="Component leaflets"/>
+	</related-patterns>
+	<management>
+		<author>Benno Schmidt</author>
+		<revision-number>0.1</revision-number>
+		<creation-date>12.06.2021</creation-date>
+		<last-modified>12.06.2021</last-modified>
+	</management>
+</pattern>

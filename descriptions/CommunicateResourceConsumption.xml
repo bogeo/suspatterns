@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet href="../plml/plml_bo-2.0.css"?>
+<pattern patternID="18" collection="candidates" 
+		xsi:noNamespaceSchemaLocation="../plml/plml_bo-2.1.xsd"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<name>Communicate Resource Consumption</name>
+	<alias></alias>
+	<problem>
+		TODO 
+		</problem>
+	<solution>
+		TODO
+	</solution>
+	<diagram location="/>
+	<evidence>
+		<rationale>
+			TODO
+		</rationale>
+	</evidence>
+	<confidence>Idea</confidence>
+	<literature>
+		<bibliomixed id="1">
+			Roher, K. & Richardson, D. (2013): Sustainability Requirement Patterns.
+			3rd International Workshop on Requirements Patterns (RePa 2013), Rio de 
+			Janeiro, pp. 8-11, DOI: 10.1109/RePa.2013.6602665.
+		</bibliomixed>
+	</literature>
+	<related-patterns>
+		<pattern-link type="" 
+			patternID="5" collection="candidates" 
+			label="Component leaflets"/>
+	</related-patterns>
+	<management>
+		<author>Benno Schmidt</author>
+		<revision-number>0.1</revision-number>
+		<creation-date>12.06.2021</creation-date>
+		<last-modified>12.06.2021</last-modified>
+	</management>
+</pattern>

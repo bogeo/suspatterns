@@ -7,25 +7,29 @@
 	<alias>Repair</alias>
 	<problem>
 		A software lacks functionality or can not be used anymore since the 
-		technical environment changed. 
+		technical environment changed or since there simply is a bug in it which
+		the software producer will not fix.
 	</problem>
 	<solution>
-		Make available the source code to enable the user to extend or repair 
-		the software. This requires that the user has the technical skills 
-		and know-how to change the software as well as a suitable build 
-		environment.
+		Make available the source code to enable the user to extend or repair the 
+		software. This requires that the user has the technical skills and know-how 
+		to change the software as well as a suitable build environment.
 	</solution>
 	<evidence>
 		<rationale>
-			Implementation of this "pattern" might raise sustainability 
-			awareness (see related pattern).
+			Implementation of this "pattern" might raise sustainability awareness 
+			(see related pattern candidate). Thus, this pattern seems to refer to 
+			the concept of "strong sustainability" (Martens & Schilder 2013), but
+			this remains to be discussed in further detail: How and to which extent
+			does the Open Source philosophy contribute to the goals of sustainable
+			development? (And: Is it really a "pattern"?)
 		</rationale>
 	</evidence>
 	<confidence>Idea</confidence>
 	<literature>
 		<bibliomixed id="1">
-			Busch, T. (2008): Open Source und Nachhaltigkeit. Open Source 
-			Jahrbuch 2008, TU Berlin.
+			Busch, T. (2008): Open Source und Nachhaltigkeit. Open Source Jahrbuch 
+			2008, TU Berlin.
 		</bibliomixed>
 	</literature>
 	<formalization language="CafeOBJ">
@@ -42,8 +46,8 @@
 	</related-patterns>
 	<management>
 		<author>Benno Schmidt</author>
-		<revision-number>0.3</revision-number>
+		<revision-number>0.4</revision-number>
 		<creation-date>14.07.2019</creation-date>
-		<last-modified>16.07.2019</last-modified>
+		<last-modified>12.06.2021</last-modified>
 	</management>
 </pattern>

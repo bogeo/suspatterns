@@ -12,15 +12,18 @@
 		knowledge.
 	</problem>
 	<solution>
-		Sensitize the stakeholders for this topic by raising awareness about software
-		sustainability issues [1]. E.g., this can be done by making relevant software 
-		concepts transparent for the general public. 
+		Sensitize the stakeholders for this topic by raising awareness about 
+		software sustainability issues [1]. E.g., this can be done by making 
+		relevant software concepts transparent for the general public. 
 	</solution>
 	<evidence>
 		<rationale>
 			Since the interaction between human stakeholders and the software plays
-			an important role, this strategic approach has been registered as pattern 
-			candidate here.		
+			an important role, this strategic approach has been registered as 
+			pattern candidate here. Indeed, this pattern refers to the concept of 
+			"strong sustainability" (Martens & Schilder 2013). It remains to be 
+			discussed, if this really gives a pattern. (If so, it has to be 
+			described, how the underlying "socio-technical" mechanism works.)
 		</rationale>
 	</evidence>
 	<confidence>Idea</confidence>
@@ -46,8 +49,8 @@
 	</related-patterns>
 	<management>
 		<author>Benno Schmidt</author>
-		<revision-number>0.2</revision-number>
+		<revision-number>0.3</revision-number>
 		<creation-date>14.07.2019</creation-date>
-		<last-modified>16.07.2019</last-modified>
+		<last-modified>12.06.2021</last-modified>
 	</management>
 </pattern>

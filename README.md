@@ -21,7 +21,7 @@ techniques have been used. Of course, other approaches might be suitable and
 considered in the future, e.g. predicative specifications such as supported by the
 Object Contraint Language (OCL), just to mention one of many languages. From a 
 technical point of view, formal pattern descriptions are embedded into an XML-based 
-overarching pattern language here, namely the "pattern language modelling language #
+overarching pattern language here, namely the "pattern language modelling language"
 (PLML). - Please note that this is all is work-in-progress and that your participation 
 is appreciated.
   
@@ -60,6 +60,12 @@ The Call-by-Need strategy is also known as Lazy Evaluation, see "Lazy Evaluation
 ### (Circuit Breaker)
 (This prominent stability pattern represents the huge group of patterns from another 
 domains that deserve further examination with respect to sustainability issues.)
+### Communicate Resource Consumption
+This pattern deals with the notification of software users about the resource 
+consumption caused by the used software. See Roher & Richardson (2013) for a 
+description of this requirement pattern (the reference is available in the 
+corresponding PLML document 
+[CommunicateResourceConsumption.xml](descriptions/CommunicateResourceConsumption.xml).
 ### Compensate
 This describes the basic approach to neutralize resource consumption by suitable 
 compensation measures. See [Compensate.xml](descriptions/Compensate.xml).
@@ -70,6 +76,8 @@ See [ComponentLeaflets.xml](descriptions/ComponentLeaflets.xml).
 ### Component Replaceability
 Principally, this reflects the "Design for Replaceability" idea. 
 See [ComponentReplaceability.xml](descriptions/ComponentReplaceability.xml).
+### Document Run-time Behavior
+See [DocumentRuntimeBehavior.xml](descriptions/DocumentRuntimeBehavior.xml)
 ### Don't Stream Twice
 See [DontStreamTwice.xml](descriptions/DontStreamTwice.xml) (avoid unnecessary data 
 transfers resp. Internet traffic).
@@ -87,6 +95,12 @@ A description has not been added to this repository.
 ### General Shortcut
 We are not sure whether this really is a pattern (a matter of granularity...). 
 However, a description has not been added yet.
+### Incentive
+This requirement pattern suggests offering the software user some form of incentive 
+to encourage her/him to reduce resource consumption. This pattern has been named 
+"Incentivizing Minimal Resource Consumption" by Roher & Richardson (2013). (The 
+reference is available in the corresponding PLML document
+[Incentive.xml](descriptions/Incentive.xml).
 ### Lazy Evaluation
 Lazy evaluation is a strategy which delays the evaluation of expressions given in 
 computer programs until its value is needed and which also avoids repeated evaluations 
@@ -100,6 +114,11 @@ mechanism (see "Lazy Evaluation"). For a brief description, see
 ### Minimize Dataflow
 Here an alias for "Buffered Dataflow". 
 See [BufferedDataflow.xml](descriptions/BufferedDataflow.xml).
+### (O-notation)
+It is a prominent anti-pattern or simple a "bad habit" of some developers not to care 
+about algorithmic efficency. Since this does not give a pattern directly, if hasnt't
+been documented here. But see the pattern "Document run-time behavior", which 
+addresses this aspect.
 ### Open Source
 It is said, the open source philosophy and the practices behind open source 
 development contribute to software with a higher degree of sustainabilty. Certainly 
@@ -128,7 +147,7 @@ See [SwitchOffUnneededProcesses.xml](descriptions/SwitchOffUnneededProcesses.xml
 See "Lazy Evaluation".
 ### Sleep Mode
 Alias for "Standby Operation".
-### Standy Operation
+### Standby Operation
 See [Standby.xml](descriptions/Standby.xml).
 ### Suspend
 Alias for "Standby Operation".
@@ -144,6 +163,11 @@ Alias for "Component Leaflets".
 Here an alias for "Component Replaceability".
 ### Switch Off Unneeded Processes
 See [SwitchOffUnneededProcesses.xml](descriptions/SwitchOffUnneededProcesses.xml).
+### Track Resource Consumption
+This requirement pattern suggests to explicitly track the resource consumption of a software user.
+This pattern has been recommended by Roher & Richardson (2013). (The reference is 
+available in the corresponding PLML document 
+[TrackResourceConsumption.xml](descriptions/TrackResourceConsumption.xml).
 ### Uninstall
 See [Uninstall.xml](descriptions/Uninstall.xml).
 ### Virtual Machine
