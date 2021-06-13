@@ -18,6 +18,11 @@
 		electric energy demand of a software component, hardware utilization  
 		etc. [2].
 	</solution>
+	<evidence>
+		<rationale>
+			TODO
+		</rationale>
+	</evidence>
 	<confidence>Idea</confidence>
 	<literature>
 	 	<bibliomixed id="1">
@@ -42,14 +47,15 @@
 	<related-patterns>
 		<pattern-link type="is-related-to" patternID="7" collection="candidates" 
 			label="support component replaceability"/>
-		<pattern-link type="is-contained-by" 
-			patternID="99" collection="candidates" 
+		<pattern-link type="is-contained-by" patternID="99" collection="candidates" 
 			label="raise sustainability awareness"/>
+		<pattern-link type="contains" patternID="17" collection="candidates" 
+			label="document runtime behavior"/>
 	</related-patterns>
 	<management>
 		<author>Benno Schmidt</author>
-		<revision-number>0.3</revision-number>
+		<revision-number>0.4</revision-number>
 		<creation-date>14.07.2019</creation-date>
-		<last-modified>16.07.2019</last-modified>
+		<last-modified>13.06.2021</last-modified>
 	</management>
 </pattern>

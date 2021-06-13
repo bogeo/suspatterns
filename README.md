@@ -164,9 +164,9 @@ Here an alias for "Component Replaceability".
 ### Switch Off Unneeded Processes
 See [SwitchOffUnneededProcesses.xml](descriptions/SwitchOffUnneededProcesses.xml).
 ### Track Resource Consumption
-This requirement pattern suggests to explicitly track the resource consumption of a software user.
-This pattern has been recommended by Roher & Richardson (2013). (The reference is 
-available in the corresponding PLML document 
+This requirement pattern suggests to explicitly track the resource consumption of a 
+software user. This pattern has been recommended by Roher & Richardson (2013). The 
+reference is available in the corresponding PLML document 
 [TrackResourceConsumption.xml](descriptions/TrackResourceConsumption.xml).
 ### Uninstall
 See [Uninstall.xml](descriptions/Uninstall.xml).

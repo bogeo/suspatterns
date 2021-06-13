@@ -23,21 +23,20 @@
 	<diagram location="/>
 	<evidence>
 		<rationale>
-			TODO
+			This pattern can help to build software with a higher degree of 
+			resource-efficiency and to avoid technical obsolescence effects.
 		</rationale>
 	</evidence>
 	<confidence>Idea</confidence>
 	<literature>
 	</literature>
 	<related-patterns>
-		<pattern-link type="" 
-			patternID="5" collection="candidates" 
-			label="Component leaflets"/>
+		<pattern-link type="is-contained-by" patternID="5" collection="candidates" label="Component leaflets"/>
 	</related-patterns>
 	<management>
 		<author>Benno Schmidt</author>
-		<revision-number>0.1</revision-number>
+		<revision-number>0.2</revision-number>
 		<creation-date>12.06.2021</creation-date>
-		<last-modified>12.06.2021</last-modified>
+		<last-modified>13.06.2021</last-modified>
 	</management>
 </pattern>
