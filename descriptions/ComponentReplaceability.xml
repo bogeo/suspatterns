@@ -11,7 +11,7 @@
 	</problem>
 	<solution>
 		Replace the responsible component by a more suitable component. To do
-		this, the often the presence of suitable system-internal interfaces is
+		this, often the presence of suitable system-internal interfaces is
 		a pre-requisiste. 
 	</solution>
 	<confidence>Idea</confidence>
