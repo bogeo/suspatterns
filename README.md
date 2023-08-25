@@ -19,7 +19,7 @@ comprising of pattern collections. You are very welcome to join our activities!
 We tried to describe the patterns formally. By now, algebraic specification 
 techniques have been used. Of course, other approaches might be suitable and 
 considered in the future, e.g. predicative specifications such as supported by the
-Object Contraint Language (OCL), just to mention one of many languages. From a 
+Object Constraint Language (OCL), just to mention one of many languages. From a 
 technical point of view, formal pattern descriptions are embedded into an XML-based 
 overarching pattern language here, namely the "pattern language modelling language"
 (PLML). - Please note that this is all is work-in-progress and that your participation 
