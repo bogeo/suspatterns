@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet href="../plml/plml_bo-2.0.css"?>
+<pattern patternID="21" collection="candidates" 
+		xsi:noNamespaceSchemaLocation="../plml/plml_bo-2.0.xsd" 
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<name>Storage versus Recomputation</name>
+	<alias>Compute vs. Store</alias>
+	<alias>Recompute-on-Demand</alias>
+	<alias>Cost-Aware Data Retention</alias>
+	<alias>Data Persistence Optimization</alias>
+	<problem>
+		Computational processes generate files or data artifacts that require both processing resources and storage capacity. Keeping these artifacts indefinitely incurs ongoing storage costs, while deleting them may result in additional computational costs if they are needed again. The challenge is to determine the optimal retention period by balancing storage costs against the expected costs of recomputation.
+	</problem>
+	<solution>
+		<p>Implement a cost-aware data retention strategy that evaluates whether an artifact should be retained or deleted based on its storage costs, recomputation costs, and probability of future access.</p>
+	  <p>For each artifact, estimate: 1. Computation Cost Ccomp: The cost of generating the artifact, including server time and energy consumption. 2. Storage Cost Cstor(t): The ongoing cost of retaining the artifact over time. 3. Access Probability: The likelihood that the artifact will be requested again within a given period.</p>
+		<p>Use these parameters to determine an economically optimal retention period. Artifacts with low recomputation costs and low access probabilities should be deleted relatively early, whereas expensive-to-recompute or frequently accessed artifacts should be retained longer.</p>
+		<p>If an artifact is requested after deletion, it is regenerated on demand.</p>
+	</solution>
+	<evidence>
+		<rationale>
+			<p>The decision is based on the economic trade-off between persistent storage and recomputation. The break-even point can be calculated by comparing the cumulative storage costs with the cost of regenerating the artifact:</p>
+			<p>Break-even retention period: Tbw = Ccomp : Cstor, where Cstor represents the storage cost per unit of time. If the cumulative storage cost exceeds the expected recomputation cost, deleting and regenerating the artifact becomes economically attractive.</p>
+			<p>This approach is also supported by established concepts in computer science, such as caching, lazy evaluation, memoization, and storage tiering. These concepts demonstrate that retaining computed results is not always the most efficient strategy. A cost-aware retention policy can reduce infrastructure expenses, storage consumption, and potentially the overall energy footprint.</p>
+		</rationale>
+	</evidence>
+	<confidence>timeless</confidence>
+	<related-patterns>
+		<pattern-link type="is-related-to" patternID="22" collection="timeless"
+			label="Cost-Aware Intermediate Result Management" />
+	</related-patterns>
+	<management>
+		<author>Benno Schmidt</author>
+		<revision-number>0.1</revision-number>
+		<creation-date>21.11.2026</creation-date>
+		<last-modified>21.11.2026</last-modified>
+	</management>
+</pattern>

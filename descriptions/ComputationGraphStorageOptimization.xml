@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet href="../plml/plml_bo-2.0.css"?>
+<pattern patternID="22" collection="candidates" 
+		xsi:noNamespaceSchemaLocation="../plml/plml_bo-2.1.xsd" 
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<name>Computation Graph Storage Optimization</name>
+	<alias>Cost-Aware Intermediate Result Management</alias>
+	<alias>Intermediate Result Caching and Recalculation</alias>
+	<alias>Selective Intermediate Result Persistence</alias>
+	<problem>
+		Complex processing workflows (such as transformer networks in FME) generate multiple intermediate files and data artifacts throughout their execution. These intermediate results may be required by multiple downstream processing steps, and deleting them can trigger the 		recomputation of several upstream transformations. The challenge is to determine which intermediate results should be retained and which hould be deleted, taking into account their storage costs, recomputation costs, reuse probability, and dependencies within the processing graph.
+	</problem>
+	<solution>
+		<p>Implement a dependency-aware and cost-based intermediate result management strategy that evaluates the economic value of retaining each intermediate result within the entire processing graph.</p>
+	  	<p>For each intermediate result, consider: 1. Storage Cost: The ongoing cost of retaining the intermediate result, based on its size and retention period. 2. Recomputation Cost: The computational cost of regenerating the result, including all required upstream processing steps. 3. Reuse Probability: The likelihood that the result will be needed again by downstream processing steps or future workflow executions. 4. Dependency Structure: The number and nature of downstream consumers and the upstream processing steps required to regenerate the result. 5. Shared Dependencies: The potential reuse of intermediate results by multiple processing branches.</p>
+		<p>Based on these parameters, determine which intermediate results should be persisted, temporarily retained, or deleted.</p>
+		<p>Prioritize the retention of intermediate results that are expensive to regenerate, frequently reused, or required by multiple downstream processing branches. Results with low recomputation costs and low expected reuse should be deleted more aggressively.</p>
+		<p>The strategy should optimize storage and recomputation decisions at the processing graph level rather than treating each intermediate file as an independent artifact.</p>
+	</solution>
+	<evidence>
+		<rationale>
+			<p>The rationale is based on the trade-off between storage costs and the computational costs of regenerating intermediate results in a dependency graph. In contrast to simple data retention strategies, the value of an intermediate result depends not only on its individual computation cost but also on the downstream processing steps that can reuse it and the upstream computations that would otherwise need to be repeated.</p>
+			<p>This approach is supported by established concepts in computer science, including caching, memoization, dependency graph pptimization, and incremental computation. It is also reflected in practical workflow execution systems such as FME, which provide data caching mechanisms to retain intermediate transformer outputs and avoid unnecessary recomputation.</p>
+			<p>By considering dependencies and shared intermediate results, this pattern enables more efficient resource utilization, reduces redundant processing, lowers storage costs, and can contribute to reduced energy consumption.</p>
+		</rationale>
+	</evidence>
+	<confidence>timeless</confidence>
+	<related-patterns>
+		<pattern-link type="is-related-to" patternID="21" collection="timeless"
+			label="Storage versus Recomputation" />
+	</related-patterns>
+	<management>
+		<author>Benno Schmidt</author>
+		<revision-number>0.1</revision-number>
+		<creation-date>21.11.2026</creation-date>
+		<last-modified>21.11.2026</last-modified>
+	</management>
+</pattern>
